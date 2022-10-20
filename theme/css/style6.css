@@ -98,17 +98,20 @@ article > header {
 
 
 /* Links */;
+
+aside a { color:#fdfdfd; text-decoration:none; }
+aise a:visited { color:#fdfdfd; text-decoration:none; }
+aside a:link { color:#fdfdfd; text-decoration:none; }
+aside a:active { color:#fdfdfd; text-decoration:none; }
+aside a:hover { text-decoration: underline; }
+
+
 a  { color:blue; text-decoration:none; }
 a:visited { color:blue; text-decoration:none; }
 a:link { color:blue; text-decoration:none; }
 a:active { color:blue; text-decoration:none; }
 a:hover { text-decoration: underline; }
 
-aside a  { color:#fdfdfd; text-decoration:none; }
-aise a:visited { color:#fdfdfd; text-decoration:none; }
-aside a:link { color:#fdfdfd; text-decoration:none; }
-aside a:active { color:#fdfdfd; text-decoration:none; }
-aside a:hover { text-decoration: underline; }
 
 /* Code */
 .highlight pre {
