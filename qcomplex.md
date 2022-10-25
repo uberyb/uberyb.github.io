@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title> Daniel Tobias |  </title>
+        <title>Quantum Complexity reading group (10/2022)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Daniel Tobias">
@@ -30,13 +30,13 @@
         <meta name="twitter:image" content="">
 
     <meta name="twitter:creator" content="">
-    <meta name="twitter:url" content="https://uberyb.github.io/categories.html">
-    <meta name="twitter:title" content="Daniel Tobias ~ Catégories">
-    <meta name="twitter:description" content="Daniel Tobias ~ Catégories du site">
+    <meta name="twitter:url" content="https://uberyb.github.io/quantum-complexity-reading-group-102022.html">
+    <meta name="twitter:title" content="Daniel Tobias ~ Quantum Complexity reading group (10/2022)">
+    <meta name="twitter:description" content="Background This reading group was started by Sanchayan Dutta, a math student at UC Davis who is also interested in computational complexity and some members of the Kim Lab. Since this is an ongoing activity I plan on updating it as we go. So far the plan is to follow …">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Daniel Tobias ~ Catégories"/>
-    <meta property="og:description" content="Daniel Tobias ~ Catégories"/>
+    <meta property="og:title" content="Daniel Tobias ~ Quantum Complexity reading group (10/2022)"/>
+    <meta property="og:description" content="Background This reading group was started by Sanchayan Dutta, a math student at UC Davis who is also interested in computational complexity and some members of the Kim Lab. Since this is an ongoing activity I plan on updating it as we go. So far the plan is to follow …"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -76,12 +76,17 @@
 
 <!-- Content -->
 <article>
-    <h2>Categories</h2>
-    <ul class="category_folder">
-            <li><a href="category/expository.html">expository</a></li>
-            <li><a href="category/misc.html">misc</a></li>
-            <li><a href="category/readings.html">readings</a></li>
-    </ul>
+    <section id="content">
+        <article>
+            <h2 class="post_title post_detail"><a href="https://uberyb.github.io/quantum-complexity-reading-group-102022.html" rel="bookmark"
+                                                  title="Permalink to Quantum Complexity reading group (10/2022)">Quantum Complexity reading group (10/2022)</a></h2>
+            <div class="entry-content blog-post">
+                <h1>Background</h1>
+<p>This reading group was started by <a href="https://sanchayandutta.cs.ucdavis.edu/">Sanchayan Dutta</a>, a math student at UC Davis who is also interested in computational complexity and some members of the Kim Lab. Since this is an ongoing activity I plan on updating it as we go. So far the plan is to follow along roughly with <a href="https://www.henryyuen.net/">Dr. Henry Yuen's</a> complexity notes:</p>
+<p><a href="http://www.henryyuen.net/classes/fall2020/">Advanced Topics in Quantum Information Theory</a></p>
+            </div>
+        </article>
+    </section>
 </article>
 
 <!-- Footer
