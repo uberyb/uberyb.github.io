@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - misc</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-10-26T12:17:59-07:00</updated><entry><title>home</title><link href="https://uberyb.github.io/home.html" rel="alternate"></link><published>2022-10-26T12:17:59-07:00</published><updated>2022-10-26T12:17:59-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/home.html</id><content type="html">&lt;hr&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - misc</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-10-26T14:49:02-07:00</updated><entry><title>home</title><link href="https://uberyb.github.io/home.html" rel="alternate"></link><published>2022-10-26T14:49:02-07:00</published><updated>2022-10-26T14:49:02-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/home.html</id><content type="html">&lt;hr&gt;
 &lt;h2&gt;Reading Groups&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/quantum-complexity-reading-group-102022.html"&gt;Sanchayan Dutta's quantum
 complexity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/operator-algebras-reading-group.html"&gt;Operator Algebras&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="misc"></category></entry></feed>
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://uberyb.github.io/exercises.html"&gt;Exercises/Problems&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Exercises</title><link href="https://uberyb.github.io/exercises.html" rel="alternate"></link><published>2022-10-26T14:47:52-07:00</published><updated>2022-10-26T14:47:52-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/exercises.html</id><content type="html">&lt;p&gt;&lt;a href="https://uberyb.github.io/images/diftopexer.pdf"&gt;A couple differential topology prelim questions&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry></feed>
