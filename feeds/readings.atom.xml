@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - readings</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/readings.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-10-26T14:54:09-07:00</updated><entry><title>Quantum Complexity reading group (10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-102022.html" rel="alternate"></link><published>2022-10-26T14:54:09-07:00</published><updated>2022-10-26T14:54:09-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/quantum-complexity-reading-group-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - readings</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/readings.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-11-06T17:45:58-08:00</updated><entry><title>Quantum Complexity reading group (10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-102022.html" rel="alternate"></link><published>2022-11-06T17:45:58-08:00</published><updated>2022-11-06T17:45:58-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-06:/quantum-complexity-reading-group-102022.html</id><content type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt;, &lt;a href="https://scholar.google.com/citations?user=rwSKSRgAAAAJ&amp;amp;hl=en"&gt;Arkin Tikku&lt;/a&gt;, and &lt;a href="https://www.isaackimquantum.com/"&gt;Isaac Kim&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Resources&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.henryyuen.net/classes/fall2020/"&gt;Advanced Topics in Quantum Information Theory&lt;/a&gt;&lt;br&gt;
 &lt;a href="https://www.dr-qubit.org/AQIT.html"&gt;Toby Cubitt's Advanced Quantum Information theory&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Meeting 1 (planned)&lt;/h2&gt;
-&lt;p&gt;The plan is to have a 3 part presentation based on the notes and personal
-experience. This may be the …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Background&lt;/h2&gt;
-&lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt;, &lt;a href="https://scholar.google.com/citations?user=rwSKSRgAAAAJ&amp;amp;hl=en"&gt;Arkin Tikku&lt;/a&gt;, and &lt;a href="https://www.isaackimquantum.com/"&gt;Isaac Kim&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Resources&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.henryyuen.net/classes/fall2020/"&gt;Advanced Topics in Quantum Information Theory&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://www.dr-qubit.org/AQIT.html"&gt;Toby Cubitt's Advanced Quantum Information theory&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;Meeting 1 (planned)&lt;/h2&gt;
-&lt;p&gt;The plan is to have a 3 part presentation based on the notes and personal
-experience. This may be the general meeting format with some exercises weaved in
-sporadically.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Discussion of local Hamiltonians (lead by Arkin and Sanchayan)  &lt;/li&gt;
-&lt;li&gt;Reductions in classical complexity theory (lead by myself)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="readings"></category></entry><entry><title>Operator Algebras reading group</title><link href="https://uberyb.github.io/operator-algebras-reading-group.html" rel="alternate"></link><published>2022-10-26T12:14:16-07:00</published><updated>2022-10-26T12:14:16-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/operator-algebras-reading-group.html</id><content type="html">&lt;p&gt;(planned)&lt;/p&gt;</content><category term="readings"></category></entry></feed>
+&lt;h2&gt;Meeting 1&lt;/h2&gt;
+&lt;p&gt;11/1/2022&lt;br&gt;
+&lt;em&gt; &lt;a href="https://uberyb.github.io/images/hamiltcomplex1.pdf"&gt;Hamiltonian Complexity Part 1&lt;/a&gt;&lt;br&gt;
+&lt;/em&gt; My notes soon to follow&lt;/p&gt;</content><category term="readings"></category></entry><entry><title>Operator Algebras reading group</title><link href="https://uberyb.github.io/operator-algebras-reading-group.html" rel="alternate"></link><published>2022-10-26T12:14:16-07:00</published><updated>2022-10-26T12:14:16-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/operator-algebras-reading-group.html</id><content type="html">&lt;p&gt;(planned)&lt;/p&gt;</content><category term="readings"></category></entry></feed>
