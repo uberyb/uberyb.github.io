@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - readings</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/readings.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-11-08T13:01:29-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2022-11-08T13:01:29-08:00</published><updated>2022-11-08T13:01:29-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-08:/topological-quantum-field-theory.html</id><summary type="html">&lt;h2&gt;Meeting 1&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - readings</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/readings.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-11-08T13:24:57-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2022-11-08T13:24:57-08:00</published><updated>2022-11-08T13:24:57-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-08:/topological-quantum-field-theory.html</id><summary type="html">&lt;h2&gt;Meeting 1&lt;/h2&gt;
 &lt;p&gt;11/07/2022  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
@@ -19,12 +19,7 @@ that the dimension of the cobordisms is &lt;span class="math"&gt;\(+1\)&lt;/span
 manifolds.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The objects are &lt;span class="math"&gt;\(d\)&lt;/span&gt; dimensional, smooth, oriented, and closed manifolds.  &lt;/li&gt;
-&lt;li&gt;
-&lt;dl&gt;
-&lt;dt&gt;Morphisms are cobordisms (so &lt;span class="math"&gt;\(d+1\)&lt;/span&gt; dimensional manifolds) &lt;span class="math"&gt;\(M\)&lt;/span&gt; with $\partial M&lt;/dt&gt;
-&lt;dd&gt;\Sigma_0 \to \Sigma_1&lt;span class="math"&gt;\(. $M\)&lt;/span&gt; is a morphism &lt;span class="math"&gt;\(M : \Sigma_0 \to \Sigma_1\)&lt;/span&gt;.  &lt;/dd&gt;
-&lt;/dl&gt;
-&lt;/li&gt;
+&lt;li&gt;Morphisms are cobordisms (so &lt;span class="math"&gt;\(d+1\)&lt;/span&gt; dimensional manifolds) &lt;span class="math"&gt;\(M\)&lt;/span&gt; with &lt;span class="math"&gt;\(\partial M: \Sigma_0 \to \Sigma_1\)&lt;/span&gt;. &lt;span class="math"&gt;\(M\)&lt;/span&gt; is a morphism &lt;span class="math"&gt;\(M : \Sigma_0 \to \Sigma_1\)&lt;/span&gt;.  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now if &lt;span class="math"&gt;\(\mathbb{K}\)&lt;/span&gt; is a field, a &lt;span class="math"&gt;\((2+1)\)&lt;/span&gt; dimensional TQFT is an
 &lt;span class="math"&gt;\(\otimes\)&lt;/span&gt;-Function &lt;span class="math"&gt;\(Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})\)&lt;/span&gt;.&lt;/p&gt;
