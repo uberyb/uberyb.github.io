@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-11-08T13:24:57-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2022-11-08T13:24:57-08:00</published><updated>2022-11-08T13:24:57-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-08:/topological-quantum-field-theory.html</id><summary type="html">&lt;h2&gt;Meeting 1&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-11-08T13:28:14-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2022-11-08T13:28:14-08:00</published><updated>2022-11-08T13:28:14-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-08:/topological-quantum-field-theory.html</id><summary type="html">&lt;h2&gt;Meeting 1&lt;/h2&gt;
 &lt;p&gt;11/07/2022  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
@@ -22,7 +22,7 @@ manifolds.  &lt;/p&gt;
 &lt;li&gt;Morphisms are cobordisms (so &lt;span class="math"&gt;\(d+1\)&lt;/span&gt; dimensional manifolds) &lt;span class="math"&gt;\(M\)&lt;/span&gt; with &lt;span class="math"&gt;\(\partial M: \Sigma_0 \to \Sigma_1\)&lt;/span&gt;. &lt;span class="math"&gt;\(M\)&lt;/span&gt; is a morphism &lt;span class="math"&gt;\(M : \Sigma_0 \to \Sigma_1\)&lt;/span&gt;.  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Now if &lt;span class="math"&gt;\(\mathbb{K}\)&lt;/span&gt; is a field, a &lt;span class="math"&gt;\((2+1)\)&lt;/span&gt; dimensional TQFT is an
-&lt;span class="math"&gt;\(\otimes\)&lt;/span&gt;-Function &lt;span class="math"&gt;\(Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})\)&lt;/span&gt;.&lt;/p&gt;
+&lt;span class="math"&gt;\(\otimes\)&lt;/span&gt;-Functor &lt;span class="math"&gt;\(Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;This definition sets up some other nice things, like allowing us to call a TQFT
 Hermitian (&lt;span class="math"&gt;\(Z(-M) = Z(M)^*\)&lt;/span&gt; for &lt;span class="math"&gt;\(\mathbb{K} = \mathbb{C}\)&lt;/span&gt;) and unitarity such
 that &lt;span class="math"&gt;\(Z(\Sigma)\)&lt;/span&gt; is a Hilbert space.&lt;/p&gt;
