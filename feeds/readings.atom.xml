@@ -1,50 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - readings</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/readings.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-11-18T14:57:01-08:00</updated><entry><title>Quantum Complexity reading group (10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-102022.html" rel="alternate"></link><published>2022-11-18T14:57:01-08:00</published><updated>2022-11-18T14:57:01-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-18:/quantum-complexity-reading-group-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
-&lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Background&lt;/h2&gt;
-&lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of interest. Slides from presentations will be uploaded when available, and on occasion I plan to add notes about the meeting which could vary from something expository to quick links to new things I've learned.  &lt;/p&gt;
-&lt;h3&gt;Resources&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.henryyuen.net/classes/fall2020/"&gt;Advanced Topics in Quantum Information Theory&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://www.dr-qubit.org/AQIT.html"&gt;Toby Cubitt's Advanced Quantum Information theory&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://www.scottaaronson.com/barbados-2016.pdf"&gt;Aaronson's Lecture Notes&lt;/a&gt;  &lt;/p&gt;
-&lt;h2&gt;Meeting 1&lt;/h2&gt;
-&lt;p&gt;11/1/2022  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/hamiltcomplex1.pdf"&gt;Hamiltonian Complexity Part 1&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Meeting 2&lt;/h2&gt;
-&lt;p&gt;11/08/2022  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/reductions.pdf"&gt;Classical complexity reductions&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/hamiltcomplex2.pdf"&gt;Hamiltonian Complexity Part 2&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some new things&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Weingarten_function"&gt;Weingarten calculus&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://arxiv.org/abs/1712.07395"&gt;Kitaev-Feynman clock&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Meeting 3&lt;/h2&gt;
-&lt;p&gt;11/15/2022  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/LocalHamiltonian_Part1.pdf"&gt;Local Hamiltonian Problem (Part
-1)&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some things we talked about:  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Transverse-field_Ising_model"&gt;Transverse field Ising model&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://royalsocietypublishing.org/doi/10.1098/rspa.2018.0767"&gt;Simulating quantum TMs&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Bethe_ansatz"&gt;Bethe ansatz&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://arxiv.org/abs/cs/0009002"&gt;Group non-membership problem&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;</content><category term="readings"></category></entry><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2022-11-08T13:28:14-08:00</published><updated>2022-11-08T13:28:14-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-08:/topological-quantum-field-theory.html</id><summary type="html">&lt;h2&gt;Meeting 1&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - readings</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/readings.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-11-19T16:44:06-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2022-11-19T16:44:06-08:00</published><updated>2022-11-19T16:44:06-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-19:/topological-quantum-field-theory.html</id><summary type="html">&lt;h2&gt;Meeting 1&lt;/h2&gt;
 &lt;p&gt;11/07/2022  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt; (slides)  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Something I was happy to learn in this meeting was the definition of a TQFT.
 First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds &lt;span class="math"&gt;\(\Sigma_0\)&lt;/span&gt; and &lt;span class="math"&gt;\(\Sigma_1\)&lt;/span&gt; which is a compact manifold &lt;span class="math"&gt;\(M\)&lt;/span&gt; such that
-&lt;span class="math"&gt;\(\partial M = \Sigma_0 \sqcup \Sigma_1 …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Meeting 1&lt;/h2&gt;
+&lt;span class="math"&gt;\(\partial M = \Sigma_0 \sqcup \Sigma …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Meeting 1&lt;/h2&gt;
 &lt;p&gt;11/07/2022  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt; (slides)  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Something I was happy to learn in this meeting was the definition of a TQFT.
 First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds &lt;span class="math"&gt;\(\Sigma_0\)&lt;/span&gt; and &lt;span class="math"&gt;\(\Sigma_1\)&lt;/span&gt; which is a compact manifold &lt;span class="math"&gt;\(M\)&lt;/span&gt; such that
@@ -130,4 +95,39 @@ this one.&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="readings"></category></entry><entry><title>Operator Algebras reading group</title><link href="https://uberyb.github.io/operator-algebras-reading-group.html" rel="alternate"></link><published>2022-10-26T12:14:16-07:00</published><updated>2022-10-26T12:14:16-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/operator-algebras-reading-group.html</id><content type="html">&lt;p&gt;(planned)&lt;/p&gt;</content><category term="readings"></category></entry></feed>
+&lt;/script&gt;</content><category term="readings"></category></entry><entry><title>Quantum Complexity reading group (10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-102022.html" rel="alternate"></link><published>2022-11-19T16:43:24-08:00</published><updated>2022-11-19T16:43:24-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-11-19:/quantum-complexity-reading-group-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of interest. Slides from presentations will be uploaded when available, and on occasion I plan to add notes about the meeting which could vary from something expository to quick links to new things I've learned.  &lt;/p&gt;
+&lt;h3&gt;Resources&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.henryyuen.net/classes/fall2020/"&gt;Advanced Topics in Quantum Information Theory&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://www.dr-qubit.org/AQIT.html"&gt;Toby Cubitt's Advanced Quantum Information theory&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://www.scottaaronson.com/barbados-2016.pdf"&gt;Aaronson's Lecture Notes&lt;/a&gt;  &lt;/p&gt;
+&lt;h2&gt;Meeting 1&lt;/h2&gt;
+&lt;p&gt;11/1/2022  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/hamiltcomplex1.pdf"&gt;Hamiltonian Complexity Part 1&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Meeting 2&lt;/h2&gt;
+&lt;p&gt;11/08/2022  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/reductions.pdf"&gt;Classical complexity reductions&lt;/a&gt; (slides)  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/hamiltcomplex2.pdf"&gt;Hamiltonian Complexity Part 2&lt;/a&gt; (slides)  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some new things&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Weingarten_function"&gt;Weingarten calculus&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://arxiv.org/abs/1712.07395"&gt;Kitaev-Feynman clock&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Meeting 3&lt;/h2&gt;
+&lt;p&gt;11/15/2022  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/LocalHamiltonian_Part1.pdf"&gt;Local Hamiltonian Problem (Part
+1)&lt;/a&gt; (slides)  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some things we talked about:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Transverse-field_Ising_model"&gt;Transverse field Ising model&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://royalsocietypublishing.org/doi/10.1098/rspa.2018.0767"&gt;Simulating quantum TMs&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Bethe_ansatz"&gt;Bethe ansatz&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://arxiv.org/abs/cs/0009002"&gt;Group non-membership problem&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</content><category term="readings"></category></entry><entry><title>Operator Algebras reading group</title><link href="https://uberyb.github.io/operator-algebras-reading-group.html" rel="alternate"></link><published>2022-10-26T12:14:16-07:00</published><updated>2022-10-26T12:14:16-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/operator-algebras-reading-group.html</id><content type="html">&lt;p&gt;(planned)&lt;/p&gt;</content><category term="readings"></category></entry></feed>
