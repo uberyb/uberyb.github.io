@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-12-18T21:19:16-08:00</updated><entry><title>Quantum Complexity reading group (started 10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html" rel="alternate"></link><published>2022-12-18T21:19:16-08:00</published><updated>2022-12-18T21:19:16-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-12-18:/quantum-complexity-reading-group-started-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2022-12-19T02:30:37-08:00</updated><entry><title>Quantum Complexity reading group (started 10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html" rel="alternate"></link><published>2022-12-19T02:30:37-08:00</published><updated>2022-12-19T02:30:37-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-12-19:/quantum-complexity-reading-group-started-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of interest. Slides from presentations will be uploaded when available and I'll link to some things which were interesting to me that I plan to go back and read about should I stop procrastinating.&lt;/p&gt;
 &lt;h3&gt;Resources&lt;/h3&gt;
@@ -12,9 +12,8 @@
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/hamiltcomplex1.pdf"&gt;Hamiltonian Complexity Part 1&lt;/a&gt; (slides)  &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/reductions.pdf"&gt;Classical complexity reductions&lt;/a&gt; (slides)  &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/hamiltcomplex2.pdf"&gt;Hamiltonian Complexity Part 2&lt;/a&gt; (slides)  &lt;/li&gt;
-&lt;li&gt;[Local Hamiltonian Problem (Part&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/qmaoraclesep.pdf"&gt;Advice, Oracle Separation, QMA &amp;amp; QCMA&lt;/a&gt;&lt;br&gt;
-1)]({static}/images/LocalHamiltonian_Part1.pdf) (slides)  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/LocalHamiltonian_Part1.pdf"&gt;Local Hamiltonian Problem (Part1)&lt;/a&gt; (slides)  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/qmaoraclesep.pdf"&gt;Advice, Oracle Separation, QMA &amp;amp; QCMA&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Some interesting things mentioned to wiki&lt;/h2&gt;
 &lt;ul&gt;
@@ -30,7 +29,7 @@
 &lt;li&gt;[x] Classical complexity reductions  &lt;/li&gt;
 &lt;li&gt;[x] Quantum advice &amp;amp; quantum oracles  &lt;/li&gt;
 &lt;li&gt;[ ] Quantum circuit complexity  &lt;/li&gt;
-&lt;li&gt;[ ] BQP/qpoly &lt;span class="math"&gt;\(\subset\eq\)&lt;/span&gt; PostBQP/poly &lt;span class="math"&gt;\(=\)&lt;/span&gt; PP/poly  &lt;/li&gt;
+&lt;li&gt;[ ] BQP/qpoly &lt;span class="math"&gt;\(\subseteq\)&lt;/span&gt; PostBQP/poly &lt;span class="math"&gt;\(=\)&lt;/span&gt; PP/poly  &lt;/li&gt;
 &lt;li&gt;[ ] Results on the Solovay-Kitaev theorem  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
