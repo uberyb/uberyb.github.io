@@ -116,7 +116,7 @@ into the sum of these two components. </p>
 <p>So we can decompose the Hopf link using a recursive approach in a sort of tree
 structure such as:  </p>
 <p><img alt="Kauffman bracket of the Hopf link" src="https://uberyb.github.io/images/knots/2.png">  </p>
-<p>In my diagram I start with the Hopf link and then apply a single smoothing to a single crossing. I label the edges of my graph by the coefficient attached to the smoothing given by rule 2. The bottom middle two nodes of the tree are just unknots, and so their Kauffman brackets
+<p>The diagram starts with the Hopf link and then we apply a single smoothing to a single crossing. I label the edges of my graph by the coefficient attached to the smoothing given by rule 2. The bottom middle two nodes of the tree are just unknots, and so their Kauffman brackets
 are constant 1. Now the bottom left and bottom right nodes are regular isotopies of another (meaning one can be transformed to the other by <a href="https://en.wikipedia.org/wiki/Reidemeister_move">Reidemeister move's</a> of type II and III). All that remains is to compute the Kauffman bracket of the double unkot.  </p>
 <p>By rule (1) a single unknot <span class="math">\(U\)</span> has bracket 1. By rule 3 <span class="math">\(\langle U \sqcup U \rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})\)</span>. Meaning if we sum our components we get </p>
 <div class="math">$$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$</div>
@@ -132,7 +132,6 @@ the unknots polynomial, we can renormalize by dividing out <span class="math">\(
 orienting the link and multiplying the bracket by a factor <span class="math">\(A^{-3wr(L)}\)</span> will
 get you to the Jones polynomial).</p>
 <p>A question that I spent some time thinking about is how to motivate <span class="math">\(-A^2 - A^{-2}\)</span> as the choice for the unknot's bracket. This expression is obviously not very random. For one, it has the nice property that <span class="math">\(\langle \bigsqcup U_n \rangle = (-A^2 - A^{-2})^n\)</span> where <span class="math">\(U_n\)</span> is a length <span class="math">\(n\)</span> sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently <a href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/">wrote about</a>. Namely, it is the constant <span class="math">\(\delta\)</span>.</p>
-<p>Maybe I'll try a trefoil next.</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
