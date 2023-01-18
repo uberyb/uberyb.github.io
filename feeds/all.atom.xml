@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-01-17T20:01:07-08:00</updated><entry><title>Kauffman &amp; Jones polynomial of Hopf link</title><link href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html" rel="alternate"></link><published>2023-01-17T20:01:07-08:00</published><updated>2023-01-17T20:01:07-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-17:/kauffman-jones-polynomial-of-hopf-link.html</id><summary type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-01-17T20:03:53-08:00</updated><entry><title>home</title><link href="https://uberyb.github.io/home.html" rel="alternate"></link><published>2023-01-17T20:03:53-08:00</published><updated>2023-01-17T20:03:53-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-17:/home.html</id><summary type="html">&lt;h2&gt;About me&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;I'm a PhD student studying computer science at UC Davis with research interests lying in CS theory and quantum computing. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, namely Kim Lab and &lt;a href="https://quist.ucdavis.edu/"&gt;QuIST&lt;/a&gt; which is made up of many wonderful physicists …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;About me&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;I'm a PhD student studying computer science at UC Davis with research interests lying in CS theory and quantum computing. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, namely Kim Lab and &lt;a href="https://quist.ucdavis.edu/"&gt;QuIST&lt;/a&gt; which is made up of many wonderful physicists, mathematicians, computer scientists, and engineers at UC Davis.  &lt;/p&gt;
+&lt;p&gt;Previously I was a Master's student of computer science at Davis, and before that I did my undergraduate in pure mathematics at Towson University under the advisement of &lt;a href="https://www.towson.edu/fcsm/departments/mathematics/facultystaff/akumchev.html"&gt;Angel Kumchev&lt;/a&gt;.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Reading Groups&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html"&gt;Quantum
+Complexity &amp;amp; PCP Conjecture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html"&gt;Kauffman bracket of the Hopf link&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://uberyb.github.io/exercises.html"&gt;Exercises/Problems&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Kauffman &amp; Jones polynomial of Hopf link</title><link href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html" rel="alternate"></link><published>2023-01-17T20:03:48-08:00</published><updated>2023-01-17T20:03:48-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-17:/kauffman-jones-polynomial-of-hopf-link.html</id><summary type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  &lt;/p&gt;
 &lt;p&gt;&lt;u&gt;Define.&lt;/u&gt; A knot is a closed curve seen as a subset &lt;span class="math"&gt;\(K \subset S^3\)&lt;/span&gt; which
 should be interpreted as &lt;span class="math"&gt;\(\mathbb{R}\)&lt;/span&gt; plus a point at infinity.  &lt;/p&gt;
 &lt;p&gt;There are reasons for why the point at infinity is useful (although it is not
@@ -34,15 +49,9 @@ into the sum of these two components. &lt;/p&gt;
 &lt;p&gt;So we can decompose the Hopf link using a recursive approach in a sort of tree
 structure such as:  &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Kauffman bracket of the Hopf link" src="https://uberyb.github.io/images/knots/2.png"&gt;  &lt;/p&gt;
-&lt;p&gt;In my diagram I start with the Hopf link
-and then apply a single smoothing to a single crossing. I label the edges of my
-graph by the coefficient attached to the smoothing given by rule 2. The bottom
-middle two nodes of the tree are just unknots, and so their Kauffman brackets
-are constant 1. Now the bottom left and bottom right nodes are regular isotopies
-of another (meaning one can be transformed to the other by &lt;a href="https://en.wikipedia.org/wiki/Reidemeister_move"&gt;Reidemeister move's&lt;/a&gt; of type II and III). All that remains is to compute the Kauffman bracket of the double unkot.  &lt;/p&gt;
-&lt;p&gt;By rule (1) a single unknot &lt;span class="math"&gt;\(U\)&lt;/span&gt; has bracket 1. By rule 3 &lt;span class="math"&gt;\(\langle U \sqcup U
-\rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})\)&lt;/span&gt;. Meaning if we sum
-our components we get &lt;/p&gt;
+&lt;p&gt;In my diagram I start with the Hopf link and then apply a single smoothing to a single crossing. I label the edges of my graph by the coefficient attached to the smoothing given by rule 2. The bottom middle two nodes of the tree are just unknots, and so their Kauffman brackets
+are constant 1. Now the bottom left and bottom right nodes are regular isotopies of another (meaning one can be transformed to the other by &lt;a href="https://en.wikipedia.org/wiki/Reidemeister_move"&gt;Reidemeister move's&lt;/a&gt; of type II and III). All that remains is to compute the Kauffman bracket of the double unkot.  &lt;/p&gt;
+&lt;p&gt;By rule (1) a single unknot &lt;span class="math"&gt;\(U\)&lt;/span&gt; has bracket 1. By rule 3 &lt;span class="math"&gt;\(\langle U \sqcup U \rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})\)&lt;/span&gt;. Meaning if we sum our components we get &lt;/p&gt;
 &lt;div class="math"&gt;$$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$&lt;/div&gt;
 &lt;p&gt;Something else you could do is start with a sum of all possible smoothings.
 Suppose the unknot's polynomial is &lt;span class="math"&gt;\(-A^2 - A^{-2}\)&lt;/span&gt; then instead of a recursive
@@ -118,22 +127,7 @@ get you to the Jones polynomial).&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="expository"></category></entry><entry><title>home</title><link href="https://uberyb.github.io/home.html" rel="alternate"></link><published>2023-01-17T20:00:46-08:00</published><updated>2023-01-17T20:00:46-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-17:/home.html</id><summary type="html">&lt;h2&gt;About me&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;I'm a PhD student studying computer science at UC Davis with research interests lying in CS theory and quantum computing. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, namely Kim Lab and &lt;a href="https://quist.ucdavis.edu/"&gt;QuIST&lt;/a&gt; which is made up of many wonderful physicists …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;About me&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;I'm a PhD student studying computer science at UC Davis with research interests lying in CS theory and quantum computing. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, namely Kim Lab and &lt;a href="https://quist.ucdavis.edu/"&gt;QuIST&lt;/a&gt; which is made up of many wonderful physicists, mathematicians, computer scientists, and engineers at UC Davis.  &lt;/p&gt;
-&lt;p&gt;Previously I was a Master's student of computer science at Davis, and before that I did my undergraduate in pure mathematics at Towson University under the advisement of &lt;a href="https://www.towson.edu/fcsm/departments/mathematics/facultystaff/akumchev.html"&gt;Angel Kumchev&lt;/a&gt;.  &lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;Reading Groups&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html"&gt;Quantum
-Complexity &amp;amp; PCP Conjecture&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;a href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html"&gt;Kauffman bracket of the Hopf link&lt;/a&gt;&lt;br&gt;
-&lt;a href="https://uberyb.github.io/exercises.html"&gt;Exercises/Problems&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2023-01-13T08:08:53-08:00</published><updated>2023-01-13T08:08:53-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/topological-quantum-field-theory.html</id><summary type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
+&lt;/script&gt;</content><category term="expository"></category></entry><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2023-01-13T08:08:53-08:00</published><updated>2023-01-13T08:08:53-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/topological-quantum-field-theory.html</id><summary type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
 &lt;h2&gt;Meeting Notes&lt;/h2&gt;
 &lt;p&gt;11/07/2022  &lt;/p&gt;
 &lt;ul&gt;
