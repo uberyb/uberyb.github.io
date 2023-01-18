@@ -1,5 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-01-13T08:08:53-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2023-01-13T08:08:53-08:00</published><updated>2023-01-13T08:08:53-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/topological-quantum-field-theory.html</id><summary type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-01-17T19:50:57-08:00</updated><entry><title>Kauffman &amp; Jones polynomial of Hopf link</title><link href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html" rel="alternate"></link><published>2023-01-17T19:50:57-08:00</published><updated>2023-01-17T19:50:57-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-17:/kauffman-jones-polynomial-of-hopf-link.html</id><summary type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  &lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Define.&lt;/u&gt; A knot is a closed curve seen as a subset &lt;span class="math"&gt;\(K \subset S^3\)&lt;/span&gt; which
+should be interpreted as &lt;span class="math"&gt;\(\mathbb{R}\)&lt;/span&gt; plus a point at infinity.  &lt;/p&gt;
+&lt;p&gt;There are reasons for why the point at infinity is useful (although it is not
+relevant to the current task) and I believe containing the knot in &lt;span class="math"&gt;\(S^3\)&lt;/span&gt; is done
+so that we can fit the whole knot in a compact space. There are some operations
+on knots, but all we need here is to understand that knots can be &lt;em&gt;linked&lt;/em&gt;. A
+link &lt;span class="math"&gt;\(L\)&lt;/span&gt; is a collection of non-intersecting knots that are "linked" together. A
+good example of this is the Borromean link  &lt;/p&gt;
+&lt;p&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Borromean_Rings_Illusion_%28transparent%29.png/1024px-Borromean_Rings_Illusion_%28transparent%29.png" alt="Borromean Rings" width="200" /&gt;&lt;/p&gt;
+&lt;p&gt;Each ring here (which is really just a circle) is called an "unknot". Notice the
+removal of any unknot from the picture would totally undo the link.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Hopf link" src="https://uberyb.github.io/images/knots/1.png"&gt;&lt;br&gt;
+&lt;em&gt;Hopf link&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Notice a subtle detail of my drawing of the Hopf link: at the crossing there is
+one completely solid line intersection a "broken" line. The broken line is to be
+interpreted as the string which passes under the other string in the crossing.  &lt;/p&gt;
+&lt;p&gt;One goal of knot theory is to classify knots. One way we can do this is to
+capture a knot with algebraic information. In the case of the Jones polynomial
+one must use a Laurent polynomial. First I'll start with a more general
+polynomial for knots known as the &lt;a href="https://en.wikipedia.org/wiki/Bracket_polynomial"&gt;Kauffman bracket&lt;/a&gt; which is most easily defined inductively. For any link &lt;span class="math"&gt;\(L\)&lt;/span&gt; the Kauffman bracket &lt;span class="math"&gt;\(\langle L \rangle\)&lt;/span&gt; is&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(\langle L \rangle = 1\)&lt;/span&gt; if &lt;span class="math"&gt;\(L\)&lt;/span&gt; is the unknot.  &lt;/li&gt;
+&lt;li&gt;$\langle \times \rangle = A \langle || \rangle + A^{-1} \langle = \rangle  &lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(\langle U \sqpcup L = (-A^2 - A^{-2})\langle L \rangle\)&lt;/span&gt; (where &lt;span class="math"&gt;\(U\)&lt;/span&gt; is the
+     unknot and &lt;span class="math"&gt;\(L\)&lt;/span&gt; is some link)  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rule 2 will require further explanation. The symbols &lt;span class="math"&gt;\(\times\)&lt;/span&gt;, &lt;span class="math"&gt;\(||\)&lt;/span&gt;, and &lt;span class="math"&gt;\(=\)&lt;/span&gt; are
+meant to be seen as physical string. &lt;span class="math"&gt;\(\times\)&lt;/span&gt; implies there is a crossing, &lt;span class="math"&gt;\(||\)&lt;/span&gt;
+implies the strings are vertical and parallel whereas &lt;span class="math"&gt;\(=\)&lt;/span&gt; implies the strings
+are horizontal and parallel. The idea is to "smooth" or reduce knot crossings
+into the sum of these two components. &lt;/p&gt;
+&lt;p&gt;So we can decompose the Hopf link using a recursive approach in a sort of tree
+structure such as:  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Kauffman bracket of the Hopf link" src="https://uberyb.github.io/images/knots/2.png"&gt;  &lt;/p&gt;
+&lt;p&gt;In my diagram I start with the Hopf link
+and then apply a single smoothing to a single crossing. I label the edges of my
+graph by the coefficient attached to the smoothing given by rule 2. The bottom
+middle two nodes of the tree are just unknots, and so their Kauffman brackets
+are constant 1. Now the bottom left and bottom right nodes are regular isotopies
+of another (meaning one can be transformed to the other by &lt;a href="https://en.wikipedia.org/wiki/Reidemeister_move"&gt;Reidemeister move's&lt;/a&gt; of type II and III). All that remains is to compute the Kauffman bracket of the double unkot.  &lt;/p&gt;
+&lt;p&gt;By rule (1) a single unknot &lt;span class="math"&gt;\(U\)&lt;/span&gt; has bracket 1. By rule 3 &lt;span class="math"&gt;\(\langle U \sqcup U
+\rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})\)&lt;/span&gt;. Meaning if we sum
+our components we get &lt;/p&gt;
+&lt;div class="math"&gt;$$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$&lt;/div&gt;
+&lt;p&gt;Something else you could do is start with a sum of all possible smoothings.
+Suppose the unknot's polynomial is &lt;span class="math"&gt;\(-A^2 - A^{-2}\)&lt;/span&gt; then instead of a recursive
+tree you could have a list of all possible smoothings (where we smooth all
+crossings at the same time)  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://uberyb.github.io/images/knots/3.png"&gt;&lt;/p&gt;
+&lt;p&gt;Notice the sum here is &lt;span class="math"&gt;\((A^2 + A^{-2})(A^4 + A^{-4})\)&lt;/span&gt; which has an additional
+factor on our answer from the recursive approach. Remembering that we "scaled"
+the unknots polynomial, we can renormalize by dividing out &lt;span class="math"&gt;\((-A^2 - A^{-2})\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now if &lt;span class="math"&gt;\(A^4 = t\)&lt;/span&gt; that this is Jones polynomial of the Hopf link (in fact
+orienting the link and multiplying the bracket by a factor &lt;span class="math"&gt;\(A^{-3wr(L)}\)&lt;/span&gt; will
+get you to the Jones polynomial).&lt;/p&gt;
+&lt;p&gt;A question that I spent some time thinking about is how to motivate &lt;span class="math"&gt;\(-A^2 - A^{-2}\)&lt;/span&gt; as the choice for the unknot's bracket. This expression is obviously not very random. For one, it has the nice property that &lt;span class="math"&gt;\(\langle \bigsqcup U_n \rangle = (-A^2 - A^{-2})^n\)&lt;/span&gt; where &lt;span class="math"&gt;\(U_n\)&lt;/span&gt; is a length &lt;span class="math"&gt;\(n\)&lt;/span&gt; sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently &lt;a href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/"&gt;wrote about&lt;/a&gt;. Namely, it is the constant &lt;span class="math"&gt;\(\delta\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Maybe I'll try a trefoil next.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="expository"></category></entry><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2023-01-13T08:08:53-08:00</published><updated>2023-01-13T08:08:53-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/topological-quantum-field-theory.html</id><summary type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
 &lt;h2&gt;Meeting Notes&lt;/h2&gt;
 &lt;p&gt;11/07/2022  &lt;/p&gt;
 &lt;ul&gt;
