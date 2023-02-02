@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-01T18:28:13-08:00</updated><entry><title>[Encrypted] Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:28:13-08:00</published><updated>2023-02-01T18:28:13-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><summary type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;fK4kpI27ul3vfbQCSewRLQ==;CxaRB6a+d6Dlr4zVsIdmp5RS1hunnnmkXkB+8TsW6sU=;^&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-01T18:43:08-08:00</updated><entry><title>Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:43:08-08:00</published><updated>2023-02-01T18:43:08-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><summary type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;ZKIryObJ5wB48ByI5x1+4Q==;5t+X5DyR4zqLqq/ypQ1PMfq0ThV/xbsnweLZ6aCy+jU=;^&lt;/div&gt;
 &lt;div id="pec-decrypted-content"&gt;
-    &lt;h4&gt;&lt;i&gt;This content is encrypted.&lt;/i&gt;&lt;/h4&gt;
+    &lt;h4&gt;&lt;i&gt;&lt;/i&gt;&lt;/h4&gt;
 &lt;/div&gt;
 
 &lt;form id="pec-decrypt-form"&gt;
@@ -39,9 +39,9 @@
 
         var decrypt_content = function (password, iv_b64, ciphertext_b64, padding_char) {
             /*
-             * Decrypts the …&lt;/script&gt;</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;fK4kpI27ul3vfbQCSewRLQ==;CxaRB6a+d6Dlr4zVsIdmp5RS1hunnnmkXkB+8TsW6sU=;^&lt;/div&gt;
+             * Decrypts the content …&lt;/script&gt;</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;ZKIryObJ5wB48ByI5x1+4Q==;5t+X5DyR4zqLqq/ypQ1PMfq0ThV/xbsnweLZ6aCy+jU=;^&lt;/div&gt;
 &lt;div id="pec-decrypted-content"&gt;
-    &lt;h4&gt;&lt;i&gt;This content is encrypted.&lt;/i&gt;&lt;/h4&gt;
+    &lt;h4&gt;&lt;i&gt;&lt;/i&gt;&lt;/h4&gt;
 &lt;/div&gt;
 
 &lt;form id="pec-decrypt-form"&gt;
