@@ -1,12 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-01-18T12:43:14-08:00</updated><entry><title>Kauffman &amp; Jones polynomial of Hopf link</title><link href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html" rel="alternate"></link><published>2023-01-18T12:43:14-08:00</published><updated>2023-01-18T12:43:14-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-18:/kauffman-jones-polynomial-of-hopf-link.html</id><summary type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  &lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Define.&lt;/u&gt; A knot is a closed curve seen as a subset &lt;span class="math"&gt;\(K \subset S^3\)&lt;/span&gt; which
-should be interpreted as &lt;span class="math"&gt;\(\mathbb{R}\)&lt;/span&gt; plus a point at infinity.  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-01T18:28:13-08:00</updated><entry><title>[Encrypted] Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:28:13-08:00</published><updated>2023-02-01T18:28:13-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><summary type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;fK4kpI27ul3vfbQCSewRLQ==;CxaRB6a+d6Dlr4zVsIdmp5RS1hunnnmkXkB+8TsW6sU=;^&lt;/div&gt;
+&lt;div id="pec-decrypted-content"&gt;
+    &lt;h4&gt;&lt;i&gt;This content is encrypted.&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+
+&lt;form id="pec-decrypt-form"&gt;
+    &lt;label for="pec-content-password"&gt;Password&lt;/label&gt;
+    &lt;input type="password" id="pec-content-password" placeholder="Password" /&gt;
+    &lt;button type="button" id="pec-decrypt-content"&gt;Decrypt&lt;/button&gt;
+&lt;/form&gt;
+
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/pad-nopadding.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"&gt;&lt;/script&gt;
+
+
+&lt;script type="text/javascript"&gt;
+    (function () {
+        var strip_padding = function (padded_content, padding_char) {
+            /*
+             * Strips the padding character from decrypted content.
+             */
+            for (var i = padded_content.length; i &gt; 0; i--) {
+                if (padded_content[i - 1] !== padding_char) {
+                    return padded_content.slice(0, i);
+                }
+            }
+        };
+
+        var decrypt_content = function (password, iv_b64, ciphertext_b64, padding_char) {
+            /*
+             * Decrypts the …&lt;/script&gt;</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;fK4kpI27ul3vfbQCSewRLQ==;CxaRB6a+d6Dlr4zVsIdmp5RS1hunnnmkXkB+8TsW6sU=;^&lt;/div&gt;
+&lt;div id="pec-decrypted-content"&gt;
+    &lt;h4&gt;&lt;i&gt;This content is encrypted.&lt;/i&gt;&lt;/h4&gt;
+&lt;/div&gt;
+
+&lt;form id="pec-decrypt-form"&gt;
+    &lt;label for="pec-content-password"&gt;Password&lt;/label&gt;
+    &lt;input type="password" id="pec-content-password" placeholder="Password" /&gt;
+    &lt;button type="button" id="pec-decrypt-content"&gt;Decrypt&lt;/button&gt;
+&lt;/form&gt;
+
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/pad-nopadding.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"&gt;&lt;/script&gt;
+
+
+&lt;script type="text/javascript"&gt;
+    (function () {
+        var strip_padding = function (padded_content, padding_char) {
+            /*
+             * Strips the padding character from decrypted content.
+             */
+            for (var i = padded_content.length; i &gt; 0; i--) {
+                if (padded_content[i - 1] !== padding_char) {
+                    return padded_content.slice(0, i);
+                }
+            }
+        };
+
+        var decrypt_content = function (password, iv_b64, ciphertext_b64, padding_char) {
+            /*
+             * Decrypts the content from the ciphertext bundle.
+             */
+            var key = CryptoJS.MD5(password),
+                iv = CryptoJS.enc.Base64.parse(iv_b64),
+                ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
+                bundle = {
+                    key: key,
+                    iv: iv,
+                    ciphertext: ciphertext
+                };
+
+            var plaintext = CryptoJS.AES.decrypt(bundle, key, { iv: iv, padding: CryptoJS.pad.NoPadding });
+
+            try {
+                return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
+            }
+            catch (err) {
+                // encoding failed; wrong password
+                return false;
+            }
+        };
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var decrypt_btn = document.getElementById('pec-decrypt-content'),
+                password_input = document.getElementById('pec-content-password'),
+                encrypted_content = document.getElementById('pec-encrypted-content'),
+                decrypted_content = document.getElementById('pec-decrypted-content'),
+                decrypt_form = document.getElementById('pec-decrypt-form');
+
+            var decrypt_document = function (event) {
+                // grab the ciphertext bundle
+                var parts = encrypted_content.innerHTML.split(';');
+
+                // decrypt it
+                var content = decrypt_content(
+                    password_input.value,
+                    parts[0],
+                    parts[1],
+                    parts[2]
+                );
+
+                if (content) {
+                    // success; display the decrypted content
+                    decrypted_content.innerHTML = content;
+                    decrypt_form.parentNode.removeChild(decrypt_form);
+                    encrypted_content.parentNode.removeChild(encrypted_content);
+
+                    // any post processing on the decrypted content should be done here
+                }
+                else {
+                    // ¯\_(ツ)_/¯
+                    password_input.value = '';
+                }
+                event.preventDefault();
+                return false;
+            }
+            
+            decrypt_btn.addEventListener('click', decrypt_document);
+            decrypt_form.addEventListener('submit', decrypt_document);
+        });
+    })();
+&lt;/script&gt;</content><category term="expository"></category></entry><entry><title>Kauffman &amp; Jones polynomial of Hopf link</title><link href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html" rel="alternate"></link><published>2023-01-18T12:43:14-08:00</published><updated>2023-01-18T12:43:14-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-18:/kauffman-jones-polynomial-of-hopf-link.html</id><summary type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  &lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Define.&lt;/u&gt; A knot is a closed curve seen as a subset $K \subset S^3$ which
+should be interpreted as $\mathbb{R}$ plus a point at infinity.  &lt;/p&gt;
 &lt;p&gt;There are reasons for why the point at infinity is useful (although it is not
-relevant to the current task) and I believe containing the knot in &lt;span class="math"&gt;\(S^3\)&lt;/span&gt; is done
+relevant to the current task) and I believe containing the knot in $S^3$ is done
 so that we can fit the whole knot in a compact space. There are some operations
 on knots, but all we need here is to understand that knots can be &lt;em&gt;linked&lt;/em&gt;. A
-link &lt;span class="math"&gt;\(L\)&lt;/span&gt; is a collection of non-intersecting knots that are "linked" together. A
+link $L$ is a collection of non-intersecting knots that are "linked" together. A
 good example of this is the Borromean link  &lt;/p&gt;
 &lt;p&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Borromean_Rings_Illusion_%28transparent%29.png/1024px-Borromean_Rings_Illusion_%28transparent%29.png" alt="Borromean Rings" width="200" /&gt;&lt;/p&gt;
 &lt;p&gt;Each ring here (which is really just a circle) is called an "unknot". Observe
@@ -19,16 +161,16 @@ interpreted as the string which passes under the other string in the crossing.  
 &lt;p&gt;One goal of knot theory is to classify knots. One way we can do this is to
 capture a knot with algebraic information. In the case of the Jones polynomial
 one must use a Laurent polynomial. First I'll start with a more general
-polynomial for knots known as the &lt;a href="https://en.wikipedia.org/wiki/Bracket_polynomial"&gt;Kauffman bracket&lt;/a&gt; which is most easily defined inductively. For any link &lt;span class="math"&gt;\(L\)&lt;/span&gt; the Kauffman bracket &lt;span class="math"&gt;\(\langle L \rangle\)&lt;/span&gt; is&lt;/p&gt;
+polynomial for knots known as the &lt;a href="https://en.wikipedia.org/wiki/Bracket_polynomial"&gt;Kauffman bracket&lt;/a&gt; which is most easily defined inductively. For any link $L$ the Kauffman bracket $\langle L \rangle$ is&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;span class="math"&gt;\(\langle L \rangle = 1\)&lt;/span&gt; if &lt;span class="math"&gt;\(L\)&lt;/span&gt; is the unknot.  &lt;/li&gt;
-&lt;li&gt;&lt;span class="math"&gt;\(\langle \times \rangle = A \langle || \rangle + A^{-1} \langle = \rangle\)&lt;/span&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;span class="math"&gt;\(\langle U \sqcup L = (-A^2 - A^{-2})\langle L \rangle\)&lt;/span&gt; (where &lt;span class="math"&gt;\(U\)&lt;/span&gt; is the
-     unknot and &lt;span class="math"&gt;\(L\)&lt;/span&gt; is some link)  &lt;/li&gt;
+&lt;li&gt;$\langle L \rangle = 1$ if $L$ is the unknot.  &lt;/li&gt;
+&lt;li&gt;$\langle \times \rangle = A \langle || \rangle + A^{-1} \langle = \rangle$  &lt;/li&gt;
+&lt;li&gt;$\langle U \sqcup L = (-A^2 - A^{-2})\langle L \rangle$ (where $U$ is the
+     unknot and $L$ is some link)  &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Rule 2 will require further explanation. The symbols &lt;span class="math"&gt;\(\times\)&lt;/span&gt;, &lt;span class="math"&gt;\(||\)&lt;/span&gt;, and &lt;span class="math"&gt;\(=\)&lt;/span&gt; are
-meant to be seen as physical string. &lt;span class="math"&gt;\(\times\)&lt;/span&gt; implies there is a crossing, &lt;span class="math"&gt;\(||\)&lt;/span&gt;
-implies the strings are vertical and parallel whereas &lt;span class="math"&gt;\(=\)&lt;/span&gt; implies the strings
+&lt;p&gt;Rule 2 will require further explanation. The symbols $\times$, $||$, and $=$ are
+meant to be seen as physical string. $\times$ implies there is a crossing, $||$
+implies the strings are vertical and parallel whereas $=$ implies the strings
 are horizontal and parallel. The idea is to "smooth" or reduce knot crossings
 into the sum of these two components. &lt;/p&gt;
 &lt;p&gt;So we can decompose the Hopf link using a recursive approach in a sort of tree
@@ -36,82 +178,19 @@ structure such as:  &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Kauffman bracket of the Hopf link" src="https://uberyb.github.io/images/knots/2.png"&gt;  &lt;/p&gt;
 &lt;p&gt;The diagram starts with the Hopf link and then we apply a single smoothing to a single crossing. I label the edges of my graph by the coefficient attached to the smoothing given by rule 2. The bottom middle two nodes of the tree are just unknots, and so their Kauffman brackets
 are constant 1. Now the bottom left and bottom right nodes are regular isotopies of another (meaning one can be transformed to the other by &lt;a href="https://en.wikipedia.org/wiki/Reidemeister_move"&gt;Reidemeister move's&lt;/a&gt; of type II and III). All that remains is to compute the Kauffman bracket of the double unkot.  &lt;/p&gt;
-&lt;p&gt;By rule (1) a single unknot &lt;span class="math"&gt;\(U\)&lt;/span&gt; has bracket 1. By rule 3 &lt;span class="math"&gt;\(\langle U \sqcup U \rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})\)&lt;/span&gt;. Meaning if we sum our components we get &lt;/p&gt;
-&lt;div class="math"&gt;$$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$&lt;/div&gt;
+&lt;p&gt;By rule (1) a single unknot $U$ has bracket 1. By rule 3 $\langle U \sqcup U \rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})$. Meaning if we sum our components we get $$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$&lt;/p&gt;
 &lt;p&gt;Something else you could do is start with a sum of all possible smoothings.
-Suppose the unknot's polynomial is &lt;span class="math"&gt;\(-A^2 - A^{-2}\)&lt;/span&gt; then instead of a recursive
+Suppose the unknot's polynomial is $-A^2 - A^{-2}$ then instead of a recursive
 tree you could have a list of all possible smoothings (where we smooth all
 crossings at the same time)  &lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://uberyb.github.io/images/knots/3.png"&gt;&lt;/p&gt;
-&lt;p&gt;Notice the sum here is &lt;span class="math"&gt;\((A^2 + A^{-2})(A^4 + A^{-4})\)&lt;/span&gt; which has an additional
+&lt;p&gt;Notice the sum here is $(A^2 + A^{-2})(A^4 + A^{-4})$ which has an additional
 factor on our answer from the recursive approach. Remembering that we "scaled"
-the unknots polynomial, we can renormalize by dividing out &lt;span class="math"&gt;\((-A^2 - A^{-2})\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Now if &lt;span class="math"&gt;\(A^4 = t\)&lt;/span&gt; this is Jones polynomial of the Hopf link (in fact
-orienting the link and multiplying the bracket by a factor &lt;span class="math"&gt;\(A^{-3wr(L)}\)&lt;/span&gt; will
+the unknots polynomial, we can renormalize by dividing out $(-A^2 - A^{-2})$&lt;/p&gt;
+&lt;p&gt;Now if $A^4 = t$ this is Jones polynomial of the Hopf link (in fact
+orienting the link and multiplying the bracket by a factor $A^{-3wr(L)}$ will
 get you to the Jones polynomial).&lt;/p&gt;
-&lt;p&gt;A question that I spent some time thinking about is how to motivate &lt;span class="math"&gt;\(-A^2 - A^{-2}\)&lt;/span&gt; as the choice for the unknot's bracket. This expression is obviously not very random. For one, it has the nice property that &lt;span class="math"&gt;\(\langle \bigsqcup U_n \rangle = (-A^2 - A^{-2})^n\)&lt;/span&gt; where &lt;span class="math"&gt;\(U_n\)&lt;/span&gt; is a length &lt;span class="math"&gt;\(n\)&lt;/span&gt; sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently &lt;a href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/"&gt;wrote about&lt;/a&gt;. Namely, it is the constant &lt;span class="math"&gt;\(\delta\)&lt;/span&gt;.&lt;/p&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="expository"></category></entry><entry><title>home</title><link href="https://uberyb.github.io/home.html" rel="alternate"></link><published>2023-01-17T20:07:45-08:00</published><updated>2023-01-17T20:07:45-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-17:/home.html</id><summary type="html">&lt;h2&gt;About me&lt;/h2&gt;
+&lt;p&gt;A question that I spent some time thinking about is how to motivate $-A^2 - A^{-2}$ as the choice for the unknot's bracket. This expression is obviously not very random. For one, it has the nice property that $\langle \bigsqcup U_n \rangle = (-A^2 - A^{-2})^n$ where $U_n$ is a length $n$ sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently &lt;a href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/"&gt;wrote about&lt;/a&gt;. Namely, it is the constant $\delta$.&lt;/p&gt;</content><category term="expository"></category></entry><entry><title>home</title><link href="https://uberyb.github.io/home.html" rel="alternate"></link><published>2023-01-17T20:07:45-08:00</published><updated>2023-01-17T20:07:45-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-17:/home.html</id><summary type="html">&lt;h2&gt;About me&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;I'm a PhD student studying computer science at UC Davis with research interests lying in CS theory and quantum computing. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, namely Kim Lab and &lt;a href="https://quist.ucdavis.edu/"&gt;QuIST&lt;/a&gt; which is made up of many wonderful physicists …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;About me&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
@@ -135,97 +214,35 @@ Complexity &amp;amp; PCP Conjecture&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Something I was happy to learn in this meeting was the definition of a TQFT.
-First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds &lt;span class="math"&gt;\(\Sigma_0 …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
+First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds $\Sigma_0$ and …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
 &lt;h2&gt;Meeting Notes&lt;/h2&gt;
 &lt;p&gt;11/07/2022  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Something I was happy to learn in this meeting was the definition of a TQFT.
-First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds &lt;span class="math"&gt;\(\Sigma_0\)&lt;/span&gt; and &lt;span class="math"&gt;\(\Sigma_1\)&lt;/span&gt; which is a compact manifold &lt;span class="math"&gt;\(M\)&lt;/span&gt; such that
-&lt;span class="math"&gt;\(\partial M = \Sigma_0 \sqcup \Sigma_1\)&lt;/span&gt;. Then we have a category of cobordisms which we'll
-denote &lt;span class="math"&gt;\(\text{Cob}(d)\)&lt;/span&gt; which are &lt;span class="math"&gt;\(d\)&lt;/span&gt;-dimensional orientable cobordisms. Note
-that the dimension of the cobordisms is &lt;span class="math"&gt;\(+1\)&lt;/span&gt; dimension of the cobordant
+First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds $\Sigma_0$ and $\Sigma_1$ which is a compact manifold $M$ such that
+$\partial M = \Sigma_0 \sqcup \Sigma_1$. Then we have a category of cobordisms which we'll
+denote $\text{Cob}(d)$ which are $d$-dimensional orientable cobordisms. Note
+that the dimension of the cobordisms is $+1$ dimension of the cobordant
 manifolds.  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The objects are &lt;span class="math"&gt;\(d\)&lt;/span&gt; dimensional, smooth, oriented, and closed manifolds.  &lt;/li&gt;
-&lt;li&gt;Morphisms are cobordisms (so &lt;span class="math"&gt;\(d+1\)&lt;/span&gt; dimensional manifolds) &lt;span class="math"&gt;\(M\)&lt;/span&gt; with &lt;span class="math"&gt;\(\partial M: \Sigma_0 \to \Sigma_1\)&lt;/span&gt;. &lt;span class="math"&gt;\(M\)&lt;/span&gt; is a morphism &lt;span class="math"&gt;\(M : \Sigma_0 \to \Sigma_1\)&lt;/span&gt;.  &lt;/li&gt;
+&lt;li&gt;The objects are $d$ dimensional, smooth, oriented, and closed manifolds.  &lt;/li&gt;
+&lt;li&gt;Morphisms are cobordisms (so $d+1$ dimensional manifolds) $M$ with $\partial M: \Sigma_0 \to \Sigma_1$. $M$ is a morphism $M : \Sigma_0 \to \Sigma_1$.  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Now if &lt;span class="math"&gt;\(\mathbb{K}\)&lt;/span&gt; is a field, a &lt;span class="math"&gt;\((2+1)\)&lt;/span&gt; dimensional TQFT is an
-&lt;span class="math"&gt;\(\otimes\)&lt;/span&gt;-Functor &lt;span class="math"&gt;\(Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Now if $\mathbb{K}$ is a field, a $(2+1)$ dimensional TQFT is an
+$\otimes$-Functor $Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})$.&lt;/p&gt;
 &lt;p&gt;This definition sets up some other nice things, like allowing us to call a TQFT
-Hermitian (&lt;span class="math"&gt;\(Z(-M) = Z(M)^*\)&lt;/span&gt; for &lt;span class="math"&gt;\(\mathbb{K} = \mathbb{C}\)&lt;/span&gt;) and unitarity such
-that &lt;span class="math"&gt;\(Z(\Sigma)\)&lt;/span&gt; is a Hilbert space.&lt;/p&gt;
+Hermitian ($Z(-M) = Z(M)^*$ for $\mathbb{K} = \mathbb{C}$) and unitarity such
+that $Z(\Sigma)$ is a Hilbert space.&lt;/p&gt;
 &lt;p&gt;Somewhat unrelated we discussed anyons which are important because
 non-abelian anyons can be used in the contruction of a topological quantum
 computer (&lt;a href="https://arxiv.org/abs/quant-ph/0101025"&gt;Kitaev, Freedman, Larsen, Wang&lt;/a&gt;).
-Abelian anyons seemed simple enough to define. For operators &lt;span class="math"&gt;\(T_1, T_2\)&lt;/span&gt; we have
-that &lt;span class="math"&gt;\([T_1, T_2] = e^{i \theta}\)&lt;/span&gt;. This means if we exchange the states of two
+Abelian anyons seemed simple enough to define. For operators $T_1, T_2$ we have
+that $[T_1, T_2] = e^{i \theta}$. This means if we exchange the states of two
 (abelian) anyons then the state of the joint system only changes by some phase.
 I may write about this more either in future meetings notes or a modification of
-this one.&lt;/p&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="readings"></category></entry><entry><title>Quantum Complexity reading group (started 10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html" rel="alternate"></link><published>2023-01-13T08:06:44-08:00</published><updated>2023-01-13T08:06:44-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/quantum-complexity-reading-group-started-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
+this one.&lt;/p&gt;</content><category term="readings"></category></entry><entry><title>Quantum Complexity reading group (started 10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html" rel="alternate"></link><published>2023-01-13T08:06:44-08:00</published><updated>2023-01-13T08:06:44-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/quantum-complexity-reading-group-started-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of interest. Slides from presentations will be uploaded when available and I'll link to some things which were interesting to me that I plan to go back and read about should I stop procrastinating.&lt;/p&gt;
 &lt;h3&gt;Resources&lt;/h3&gt;
@@ -240,7 +257,7 @@ this one.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/hamiltcomplex2.pdf"&gt;Hamiltonian Complexity Part 2&lt;/a&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/LocalHamiltonian_Part1.pdf"&gt;Local Hamiltonian Problem (Part1)&lt;/a&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/qmaoraclesep.pdf"&gt;Advice, Oracle Separation, QMA &amp;amp; QCMA&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/advice2.pdf"&gt;BQP/qpoly &lt;span class="math"&gt;\(\subseteq\)&lt;/span&gt; PP/poly&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/advice2.pdf"&gt;BQP/qpoly $\subseteq$ PP/poly&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Some interesting things mentioned to wiki&lt;/h2&gt;
 &lt;ul&gt;
@@ -256,146 +273,7 @@ this one.&lt;/p&gt;
 &lt;li&gt;[x] Classical complexity reductions  &lt;/li&gt;
 &lt;li&gt;[x] Quantum advice &amp;amp; quantum oracles  &lt;/li&gt;
 &lt;li&gt;[ ] Quantum circuit complexity  &lt;/li&gt;
-&lt;li&gt;[x] BQP/qpoly &lt;span class="math"&gt;\(\subseteq\)&lt;/span&gt; PostBQP/poly &lt;span class="math"&gt;\(=\)&lt;/span&gt; PP/poly  &lt;/li&gt;
+&lt;li&gt;[x] BQP/qpoly $\subseteq$ PostBQP/poly $=$ PP/poly  &lt;/li&gt;
 &lt;li&gt;[ ] Results on the Solovay-Kitaev theorem  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="readings"></category></entry><entry><title>Exercises</title><link href="https://uberyb.github.io/exercises.html" rel="alternate"></link><published>2022-10-26T14:47:52-07:00</published><updated>2022-10-26T14:47:52-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/exercises.html</id><content type="html">&lt;p&gt;&lt;a href="https://uberyb.github.io/images/diftopexer.pdf"&gt;A couple differential topology prelim questions&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Operator Algebras reading group</title><link href="https://uberyb.github.io/operator-algebras-reading-group.html" rel="alternate"></link><published>2022-10-26T12:14:16-07:00</published><updated>2022-10-26T12:14:16-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/operator-algebras-reading-group.html</id><content type="html">&lt;p&gt;(planned)&lt;/p&gt;</content><category term="readings"></category></entry><entry><title>Sample</title><link href="https://uberyb.github.io/sample.html" rel="alternate"></link><published>2022-09-21T19:19:25-07:00</published><updated>2022-09-21T19:19:25-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-09-21:/sample.html</id><summary type="html">&lt;p&gt;test&lt;/p&gt;
-&lt;div class="math"&gt;$$\oint_{\gamma}f(z) dz = 0$$&lt;/div&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type …&lt;/script&gt;</summary><content type="html">&lt;p&gt;test&lt;/p&gt;
-&lt;div class="math"&gt;$$\oint_{\gamma}f(z) dz = 0$$&lt;/div&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width &lt; 768) ? "left" : align;
-        indent = (screen.width &lt; 768) ? "0em" : indent;
-        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-&lt;/script&gt;</content><category term="expository"></category></entry></feed>
+&lt;/ul&gt;</content><category term="readings"></category></entry><entry><title>Exercises</title><link href="https://uberyb.github.io/exercises.html" rel="alternate"></link><published>2022-10-26T14:47:52-07:00</published><updated>2022-10-26T14:47:52-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/exercises.html</id><content type="html">&lt;p&gt;&lt;a href="https://uberyb.github.io/images/diftopexer.pdf"&gt;A couple differential topology prelim questions&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Operator Algebras reading group</title><link href="https://uberyb.github.io/operator-algebras-reading-group.html" rel="alternate"></link><published>2022-10-26T12:14:16-07:00</published><updated>2022-10-26T12:14:16-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/operator-algebras-reading-group.html</id><content type="html">&lt;p&gt;(planned)&lt;/p&gt;</content><category term="readings"></category></entry><entry><title>Sample</title><link href="https://uberyb.github.io/sample.html" rel="alternate"></link><published>2022-09-21T19:19:25-07:00</published><updated>2022-09-21T19:19:25-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-09-21:/sample.html</id><content type="html">&lt;p&gt;test&lt;/p&gt;
+&lt;p&gt;$$\oint_{\gamma}f(z) dz = 0$$&lt;/p&gt;</content><category term="expository"></category></entry></feed>

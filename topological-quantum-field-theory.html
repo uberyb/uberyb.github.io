@@ -32,11 +32,11 @@
     <meta name="twitter:creator" content="">
     <meta name="twitter:url" content="https://uberyb.github.io/topological-quantum-field-theory.html">
     <meta name="twitter:title" content="Daniel Tobias ~ Topological Quantum Field Theory">
-    <meta name="twitter:description" content="In general, a good source to stay up to date is https://sites.google.com/ucdavis.edu/quantumalgebragroup/ Meeting Notes 11/07/2022 TQFTs to TQCs Something I was happy to learn in this meeting was the definition of a TQFT. First we define a cobordism between manifolds \(\Sigma_0 …">
+    <meta name="twitter:description" content="In general, a good source to stay up to date is https://sites.google.com/ucdavis.edu/quantumalgebragroup/ Meeting Notes 11/07/2022 TQFTs to TQCs Something I was happy to learn in this meeting was the definition of a TQFT. First we define a cobordism between manifolds $\Sigma_0$ and …">
 
     <!-- Facebook Meta Data -->
     <meta property="og:title" content="Daniel Tobias ~ Topological Quantum Field Theory"/>
-    <meta property="og:description" content="In general, a good source to stay up to date is https://sites.google.com/ucdavis.edu/quantumalgebragroup/ Meeting Notes 11/07/2022 TQFTs to TQCs Something I was happy to learn in this meeting was the definition of a TQFT. First we define a cobordism between manifolds \(\Sigma_0 …"/>
+    <meta property="og:description" content="In general, a good source to stay up to date is https://sites.google.com/ucdavis.edu/quantumalgebragroup/ Meeting Notes 11/07/2022 TQFTs to TQCs Something I was happy to learn in this meeting was the definition of a TQFT. First we define a cobordism between manifolds $\Sigma_0$ and …"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -90,90 +90,28 @@
 <li><a href="https://uberyb.github.io/images/tqfttotqc.pdf">TQFTs to TQCs</a>  </li>
 </ul>
 <p>Something I was happy to learn in this meeting was the definition of a TQFT.
-First we define a <em>cobordism</em> between manifolds <span class="math">\(\Sigma_0\)</span> and <span class="math">\(\Sigma_1\)</span> which is a compact manifold <span class="math">\(M\)</span> such that
-<span class="math">\(\partial M = \Sigma_0 \sqcup \Sigma_1\)</span>. Then we have a category of cobordisms which we'll
-denote <span class="math">\(\text{Cob}(d)\)</span> which are <span class="math">\(d\)</span>-dimensional orientable cobordisms. Note
-that the dimension of the cobordisms is <span class="math">\(+1\)</span> dimension of the cobordant
+First we define a <em>cobordism</em> between manifolds $\Sigma_0$ and $\Sigma_1$ which is a compact manifold $M$ such that
+$\partial M = \Sigma_0 \sqcup \Sigma_1$. Then we have a category of cobordisms which we'll
+denote $\text{Cob}(d)$ which are $d$-dimensional orientable cobordisms. Note
+that the dimension of the cobordisms is $+1$ dimension of the cobordant
 manifolds.  </p>
 <ul>
-<li>The objects are <span class="math">\(d\)</span> dimensional, smooth, oriented, and closed manifolds.  </li>
-<li>Morphisms are cobordisms (so <span class="math">\(d+1\)</span> dimensional manifolds) <span class="math">\(M\)</span> with <span class="math">\(\partial M: \Sigma_0 \to \Sigma_1\)</span>. <span class="math">\(M\)</span> is a morphism <span class="math">\(M : \Sigma_0 \to \Sigma_1\)</span>.  </li>
+<li>The objects are $d$ dimensional, smooth, oriented, and closed manifolds.  </li>
+<li>Morphisms are cobordisms (so $d+1$ dimensional manifolds) $M$ with $\partial M: \Sigma_0 \to \Sigma_1$. $M$ is a morphism $M : \Sigma_0 \to \Sigma_1$.  </li>
 </ul>
-<p>Now if <span class="math">\(\mathbb{K}\)</span> is a field, a <span class="math">\((2+1)\)</span> dimensional TQFT is an
-<span class="math">\(\otimes\)</span>-Functor <span class="math">\(Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})\)</span>.</p>
+<p>Now if $\mathbb{K}$ is a field, a $(2+1)$ dimensional TQFT is an
+$\otimes$-Functor $Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})$.</p>
 <p>This definition sets up some other nice things, like allowing us to call a TQFT
-Hermitian (<span class="math">\(Z(-M) = Z(M)^*\)</span> for <span class="math">\(\mathbb{K} = \mathbb{C}\)</span>) and unitarity such
-that <span class="math">\(Z(\Sigma)\)</span> is a Hilbert space.</p>
+Hermitian ($Z(-M) = Z(M)^*$ for $\mathbb{K} = \mathbb{C}$) and unitarity such
+that $Z(\Sigma)$ is a Hilbert space.</p>
 <p>Somewhat unrelated we discussed anyons which are important because
 non-abelian anyons can be used in the contruction of a topological quantum
 computer (<a href="https://arxiv.org/abs/quant-ph/0101025">Kitaev, Freedman, Larsen, Wang</a>).
-Abelian anyons seemed simple enough to define. For operators <span class="math">\(T_1, T_2\)</span> we have
-that <span class="math">\([T_1, T_2] = e^{i \theta}\)</span>. This means if we exchange the states of two
+Abelian anyons seemed simple enough to define. For operators $T_1, T_2$ we have
+that $[T_1, T_2] = e^{i \theta}$. This means if we exchange the states of two
 (abelian) anyons then the state of the joint system only changes by some phase.
 I may write about this more either in future meetings notes or a modification of
 this one.</p>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
             </div>
         </article>
     </section>

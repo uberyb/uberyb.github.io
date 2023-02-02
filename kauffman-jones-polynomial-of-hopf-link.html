@@ -84,13 +84,13 @@
                                                   title="Permalink to Kauffman & Jones polynomial of Hopf link">Kauffman & Jones polynomial of Hopf link</a></h2>
             <div class="entry-content blog-post">
                 <p>This exercise came out of a series of lectures given for the <a href="https://uberyb.github.io/topological-quantum-field-theory.html">Topological QFTs</a> reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of <a href="https://math.berkeley.edu/~vfr/">Vaughan Jones</a>. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  </p>
-<p><u>Define.</u> A knot is a closed curve seen as a subset <span class="math">\(K \subset S^3\)</span> which
-should be interpreted as <span class="math">\(\mathbb{R}\)</span> plus a point at infinity.  </p>
+<p><u>Define.</u> A knot is a closed curve seen as a subset $K \subset S^3$ which
+should be interpreted as $\mathbb{R}$ plus a point at infinity.  </p>
 <p>There are reasons for why the point at infinity is useful (although it is not
-relevant to the current task) and I believe containing the knot in <span class="math">\(S^3\)</span> is done
+relevant to the current task) and I believe containing the knot in $S^3$ is done
 so that we can fit the whole knot in a compact space. There are some operations
 on knots, but all we need here is to understand that knots can be <em>linked</em>. A
-link <span class="math">\(L\)</span> is a collection of non-intersecting knots that are "linked" together. A
+link $L$ is a collection of non-intersecting knots that are "linked" together. A
 good example of this is the Borromean link  </p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Borromean_Rings_Illusion_%28transparent%29.png/1024px-Borromean_Rings_Illusion_%28transparent%29.png" alt="Borromean Rings" width="200" /></p>
 <p>Each ring here (which is really just a circle) is called an "unknot". Observe
@@ -103,16 +103,16 @@ interpreted as the string which passes under the other string in the crossing.  
 <p>One goal of knot theory is to classify knots. One way we can do this is to
 capture a knot with algebraic information. In the case of the Jones polynomial
 one must use a Laurent polynomial. First I'll start with a more general
-polynomial for knots known as the <a href="https://en.wikipedia.org/wiki/Bracket_polynomial">Kauffman bracket</a> which is most easily defined inductively. For any link <span class="math">\(L\)</span> the Kauffman bracket <span class="math">\(\langle L \rangle\)</span> is</p>
+polynomial for knots known as the <a href="https://en.wikipedia.org/wiki/Bracket_polynomial">Kauffman bracket</a> which is most easily defined inductively. For any link $L$ the Kauffman bracket $\langle L \rangle$ is</p>
 <ol>
-<li><span class="math">\(\langle L \rangle = 1\)</span> if <span class="math">\(L\)</span> is the unknot.  </li>
-<li><span class="math">\(\langle \times \rangle = A \langle || \rangle + A^{-1} \langle = \rangle\)</span>  </li>
-<li><span class="math">\(\langle U \sqcup L = (-A^2 - A^{-2})\langle L \rangle\)</span> (where <span class="math">\(U\)</span> is the
-     unknot and <span class="math">\(L\)</span> is some link)  </li>
+<li>$\langle L \rangle = 1$ if $L$ is the unknot.  </li>
+<li>$\langle \times \rangle = A \langle || \rangle + A^{-1} \langle = \rangle$  </li>
+<li>$\langle U \sqcup L = (-A^2 - A^{-2})\langle L \rangle$ (where $U$ is the
+     unknot and $L$ is some link)  </li>
 </ol>
-<p>Rule 2 will require further explanation. The symbols <span class="math">\(\times\)</span>, <span class="math">\(||\)</span>, and <span class="math">\(=\)</span> are
-meant to be seen as physical string. <span class="math">\(\times\)</span> implies there is a crossing, <span class="math">\(||\)</span>
-implies the strings are vertical and parallel whereas <span class="math">\(=\)</span> implies the strings
+<p>Rule 2 will require further explanation. The symbols $\times$, $||$, and $=$ are
+meant to be seen as physical string. $\times$ implies there is a crossing, $||$
+implies the strings are vertical and parallel whereas $=$ implies the strings
 are horizontal and parallel. The idea is to "smooth" or reduce knot crossings
 into the sum of these two components. </p>
 <p>So we can decompose the Hopf link using a recursive approach in a sort of tree
@@ -120,82 +120,19 @@ structure such as:  </p>
 <p><img alt="Kauffman bracket of the Hopf link" src="https://uberyb.github.io/images/knots/2.png">  </p>
 <p>The diagram starts with the Hopf link and then we apply a single smoothing to a single crossing. I label the edges of my graph by the coefficient attached to the smoothing given by rule 2. The bottom middle two nodes of the tree are just unknots, and so their Kauffman brackets
 are constant 1. Now the bottom left and bottom right nodes are regular isotopies of another (meaning one can be transformed to the other by <a href="https://en.wikipedia.org/wiki/Reidemeister_move">Reidemeister move's</a> of type II and III). All that remains is to compute the Kauffman bracket of the double unkot.  </p>
-<p>By rule (1) a single unknot <span class="math">\(U\)</span> has bracket 1. By rule 3 <span class="math">\(\langle U \sqcup U \rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})\)</span>. Meaning if we sum our components we get </p>
-<div class="math">$$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$</div>
+<p>By rule (1) a single unknot $U$ has bracket 1. By rule 3 $\langle U \sqcup U \rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})$. Meaning if we sum our components we get $$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$</p>
 <p>Something else you could do is start with a sum of all possible smoothings.
-Suppose the unknot's polynomial is <span class="math">\(-A^2 - A^{-2}\)</span> then instead of a recursive
+Suppose the unknot's polynomial is $-A^2 - A^{-2}$ then instead of a recursive
 tree you could have a list of all possible smoothings (where we smooth all
 crossings at the same time)  </p>
 <p><img alt="" src="https://uberyb.github.io/images/knots/3.png"></p>
-<p>Notice the sum here is <span class="math">\((A^2 + A^{-2})(A^4 + A^{-4})\)</span> which has an additional
+<p>Notice the sum here is $(A^2 + A^{-2})(A^4 + A^{-4})$ which has an additional
 factor on our answer from the recursive approach. Remembering that we "scaled"
-the unknots polynomial, we can renormalize by dividing out <span class="math">\((-A^2 - A^{-2})\)</span></p>
-<p>Now if <span class="math">\(A^4 = t\)</span> this is Jones polynomial of the Hopf link (in fact
-orienting the link and multiplying the bracket by a factor <span class="math">\(A^{-3wr(L)}\)</span> will
+the unknots polynomial, we can renormalize by dividing out $(-A^2 - A^{-2})$</p>
+<p>Now if $A^4 = t$ this is Jones polynomial of the Hopf link (in fact
+orienting the link and multiplying the bracket by a factor $A^{-3wr(L)}$ will
 get you to the Jones polynomial).</p>
-<p>A question that I spent some time thinking about is how to motivate <span class="math">\(-A^2 - A^{-2}\)</span> as the choice for the unknot's bracket. This expression is obviously not very random. For one, it has the nice property that <span class="math">\(\langle \bigsqcup U_n \rangle = (-A^2 - A^{-2})^n\)</span> where <span class="math">\(U_n\)</span> is a length <span class="math">\(n\)</span> sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently <a href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/">wrote about</a>. Namely, it is the constant <span class="math">\(\delta\)</span>.</p>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
+<p>A question that I spent some time thinking about is how to motivate $-A^2 - A^{-2}$ as the choice for the unknot's bracket. This expression is obviously not very random. For one, it has the nice property that $\langle \bigsqcup U_n \rangle = (-A^2 - A^{-2})^n$ where $U_n$ is a length $n$ sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently <a href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/">wrote about</a>. Namely, it is the constant $\delta$.</p>
             </div>
         </article>
     </section>
