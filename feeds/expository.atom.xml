@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - expository</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/expository.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-01T18:43:08-08:00</updated><entry><title>[protected] Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:43:08-08:00</published><updated>2023-02-01T18:43:08-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><summary type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;LPZcpIh0cBeozkSJ9Qk+yQ==;Ls+kw2FrwgZjWX4+FM8F++AYI1SjiVcz9kv8KIfxomA=;^&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - expository</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/expository.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-03T11:56:03-08:00</updated><entry><title>Lecture Series (TQC group) - Introductory matrix representations of knots</title><link href="https://uberyb.github.io/lecture-series-tqc-group-introductory-matrix-representations-of-knots.html" rel="alternate"></link><published>2023-02-03T11:56:03-08:00</published><updated>2023-02-03T11:56:03-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-03:/lecture-series-tqc-group-introductory-matrix-representations-of-knots.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is ultimately part of a lecture series given in the topological quantum
+computing reading group. The notes in the past were either beamer slides or some
+handwritten notes, but I decided to give this format a try since it makes
+everything easier.  &lt;/p&gt;
+&lt;p&gt;For a brief recap, we previously …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is ultimately part of a lecture series given in the topological quantum
+computing reading group. The notes in the past were either beamer slides or some
+handwritten notes, but I decided to give this format a try since it makes
+everything easier.  &lt;/p&gt;
+&lt;p&gt;For a brief recap, we previously defined knots, knot invariance, and computed some examples of
+knot polynomials. In the lecture before this one, we covered the braid group and
+how links arise as closures of braids by a theorem of Alexander's.  &lt;/p&gt;
+&lt;h2&gt;Braid relations (little review)&lt;/h2&gt;
+&lt;p&gt;There is a useful braid that we defined, $\sigma_i$ which can be defined with
+the braid diagram:&lt;/p&gt;
+&lt;p&gt;[braid diagram for sig_i]&lt;/p&gt;
+&lt;p&gt;Notice that if we forget the crossing structure of the braid and decide to see
+braids as elements of $S_n$ then $\sigma_i$ really is just a transposition
+between the $i$th and $i+1$th positions. It turns out that there are relations
+between the $\sigma_i \in B_n$ ($B_n$ is the braid group on $n$ strings) that
+allow us to write down a presentation for $B_n$.  &lt;/p&gt;
+&lt;p&gt;$$
+\begin{align&lt;em&gt;}
+&amp;amp;\sigma_i \sigma_j = \sigma_j \sigma_i \quad \text{if } |i-j| \ge 2\
+&amp;amp;\sigma_i \sigma_{i+1} \sigma_i = \sigma_{i+1} \sigma_i \sigma_{i+1}
+\end{align&lt;/em&gt;}
+$$&lt;/p&gt;
+&lt;p&gt;The first equation is the easier one to see. If we were to draw the braid
+diagram you can see that indeed elements commute so long as they are
+sufficiently far away from each other. This is just because a transposition
+cannot interact with another transposition of unrelated elements. For an
+analogy, consider how transpositions $\tau_1, \tau_2 \in S_n$ commute with each
+other so long their non-trivial orbits don't intersect.  &lt;/p&gt;
+&lt;p&gt;The second fact is a little more difficult to see but follow from the following
+picture:&lt;/p&gt;
+&lt;p&gt;[Jones' picture]&lt;/p&gt;
+&lt;p&gt;If we want to look at this like braid concatenation then we have something like:&lt;/p&gt;
+&lt;p&gt;[my picture]&lt;/p&gt;
+&lt;p&gt;A little hard to visualize what's going on, but hopefully you are convinced. Now
+that we know these relations, we have a presentation for the braid group&lt;/p&gt;
+&lt;p&gt;$$
+B_n = \langle \sigma_1,...,\sigma_{n-1}\mid \sigma_i\sigma_{i+1}\sigma_i =
+\sigma_{i+1}\sigma_i\sigma_{i+1},~\sigma_i\sigma_j = \sigma_j \sigma_i
+$$&lt;/p&gt;
+&lt;p&gt;For the first set of relations remember that $1 \le i \le n-2$ and for the second set of relations remember that $|i-j|\ge 2$!  &lt;/p&gt;
+&lt;p&gt;The braid relations give us hope for minding a representation of $B_n$. We can
+construct a family of matrices satisfying the braid relations. One such family
+is:&lt;/p&gt;
+&lt;p&gt;$$
+    \sigma_i \mapsto \begin{pmatrix}I_{i-1} &amp;amp; 0 &amp;amp; 0 &amp;amp; 0\ 0 &amp;amp; 1-t &amp;amp; t &amp;amp; 0 \ 0 &amp;amp; 1
+    &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; I_{n-i-1}\end{pmatrix}
+$$&lt;/p&gt;
+&lt;p&gt;which is called the "unreduced Burau representation". If we quotient by the 1-dim
+invariant subspace then we get the "reduced Burau representation". We should see
+the representation as a homomorphism $\varphi: B_n \to GL(\mathbb{Z}[t,
+t^{-1}])$. This homomorphism is injective for $n \le 3$ and non-injective for $n
+\ge 5$, faithfulness when $n=4$ is a major open question.  &lt;/p&gt;
+&lt;h2&gt;Temperley Lieb algebra&lt;/h2&gt;
+&lt;p&gt;Vaughan Jones discovered the Jones polynomial while studying the Temperley Lieb
+algebra. It was originally encountered by Temperley and Lieb in their work on
+statistical mechanics, but ended up being related to integrable models, knot
+theory and the braid group, quantum groups and subfactors of von Neumann
+algebras (according to Wikipedia). Of course, we bring it up now because of its
+relationship with the braid group.  &lt;/p&gt;
+&lt;h3&gt;First definition of Temperley Lieb algebra&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Define.&lt;/strong&gt; For $\tau in \mathbb{C}$, $TL_{n+1}(\tau)$ is the associative unital
+$*$-algebra with generators $e_1, e_2,...,e_n$ and relations  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$e_{i}^2 = e_i, e_i^*$  &lt;/li&gt;
+&lt;li&gt;$e_i e_j = e_j e_i$ for $|i-j| \ge 2$  &lt;/li&gt;
+&lt;li&gt;$e_ie_{i\pm 1}e_i = \tau e_i  &lt;/li&gt;
+&lt;/ul&gt;</content><category term="expository"></category></entry><entry><title>[protected] Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:43:08-08:00</published><updated>2023-02-01T18:43:08-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><summary type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;rdIQkd2O4IJMVtyYEPzLMg==;TdN0zH+MOg8rQSk2k37BX66PMyswzrfZnUpfN7ukfBw=;^&lt;/div&gt;
 &lt;div id="pec-decrypted-content"&gt;
     &lt;h4&gt;&lt;i&gt;This content is encrypted. Please don't share it.&lt;/i&gt;&lt;/h4&gt;
 &lt;/div&gt;
@@ -37,7 +109,7 @@
             }
         };
 
-        var decrypt_content = function …&lt;/script&gt;</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;LPZcpIh0cBeozkSJ9Qk+yQ==;Ls+kw2FrwgZjWX4+FM8F++AYI1SjiVcz9kv8KIfxomA=;^&lt;/div&gt;
+        var decrypt_content = function (password, iv_b64, ciphertext_b64 …&lt;/script&gt;</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;rdIQkd2O4IJMVtyYEPzLMg==;TdN0zH+MOg8rQSk2k37BX66PMyswzrfZnUpfN7ukfBw=;^&lt;/div&gt;
 &lt;div id="pec-decrypted-content"&gt;
     &lt;h4&gt;&lt;i&gt;This content is encrypted. Please don't share it.&lt;/i&gt;&lt;/h4&gt;
 &lt;/div&gt;

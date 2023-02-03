@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Person">
+<head>
+            <meta charset="utf-8">
+        <!-- Site Meta Data -->
+        <title>Lecture Series (TQC group) - Introductory matrix representations of knots</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Daniel Tobias">
+
+        <link rel="shortcut icon" href="https://uberyb.github.io/images/favicon.ico">
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Daniel Tobias">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="https://uberyb.github.io/theme/css/style7.css" type="text/css"/>
+        <link rel="stylesheet" href="https://uberyb.github.io/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+            <link href="https://uberyb.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+                  title="Daniel Tobias ATOM Feed"/>
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:image" content="">
+
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="https://uberyb.github.io/lecture-series-tqc-group-introductory-matrix-representations-of-knots.html">
+    <meta name="twitter:title" content="Daniel Tobias ~ Lecture Series (TQC group) - Introductory matrix representations of knots">
+    <meta name="twitter:description" content="Introduction This is ultimately part of a lecture series given in the topological quantum computing reading group. The notes in the past were either beamer slides or some handwritten notes, but I decided to give this format a try since it makes everything easier. For a brief recap, we previously …">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Daniel Tobias ~ Lecture Series (TQC group) - Introductory matrix representations of knots"/>
+    <meta property="og:description" content="Introduction This is ultimately part of a lecture series given in the topological quantum computing reading group. The notes in the past were either beamer slides or some handwritten notes, but I decided to give this format a try since it makes everything easier. For a brief recap, we previously …"/>
+    <meta property="og:image" content=""/>
+</head>
+
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href="https://uberyb.github.io"><img id="avatar" src=""></a></center>-->
+    <h1><a href="https://tobias.cs.ucdavis.edu">Daniel Tobias</a></h1>
+    <br>
+
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://github.com/uberyb" target="_blank"><img
+                        src="https://uberyb.github.io/theme/images/icons/github.png"></a>
+                <a href="https://www.linkedin.com/in/daniel-tobias-45622517b/" target="_blank"><img
+                        src="https://uberyb.github.io/theme/images/icons/linkedin.png"></a>
+        <br>
+        email <a href='&#109;ailt&#111;&#58;&#100;to%62%&#54;9as%&#52;0u&#99;d%61vis%2E&#101;%6&#52;u'>dtobias&#64;u&#99;davis&#46;edu</a>
+    </p>
+
+
+        <h2 class="blog_roll_link"><br/></h2>
+        <ul class="navbar">
+                <li><a href="https://cs.ucdavis.edu/">UC Davis</a></li>
+                <li><a href="https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view">Kim Lab</a></li>
+                <li><a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/home">TQFT Reading Group</a></li>
+                <li><a href="https://sites.google.com/ucdavis.edu/computationalcomplexitygroup/home">Quantum Complexity Reading Group</a></li>
+        </ul>
+
+</aside>
+
+<!-- Content -->
+<article>
+    <section id="content">
+        <article>
+            <h2 class="post_title post_detail"><a href="https://uberyb.github.io/lecture-series-tqc-group-introductory-matrix-representations-of-knots.html" rel="bookmark"
+                                                  title="Permalink to Lecture Series (TQC group) - Introductory matrix representations of knots">Lecture Series (TQC group) - Introductory matrix representations of knots</a></h2>
+            <div class="entry-content blog-post">
+                <h2>Introduction</h2>
+<p>This is ultimately part of a lecture series given in the topological quantum
+computing reading group. The notes in the past were either beamer slides or some
+handwritten notes, but I decided to give this format a try since it makes
+everything easier.  </p>
+<p>For a brief recap, we previously defined knots, knot invariance, and computed some examples of
+knot polynomials. In the lecture before this one, we covered the braid group and
+how links arise as closures of braids by a theorem of Alexander's.  </p>
+<h2>Braid relations (little review)</h2>
+<p>There is a useful braid that we defined, $\sigma_i$ which can be defined with
+the braid diagram:</p>
+<p>[braid diagram for sig_i]</p>
+<p>Notice that if we forget the crossing structure of the braid and decide to see
+braids as elements of $S_n$ then $\sigma_i$ really is just a transposition
+between the $i$th and $i+1$th positions. It turns out that there are relations
+between the $\sigma_i \in B_n$ ($B_n$ is the braid group on $n$ strings) that
+allow us to write down a presentation for $B_n$.  </p>
+<p>$$
+\begin{align<em>}
+&amp;\sigma_i \sigma_j = \sigma_j \sigma_i \quad \text{if } |i-j| \ge 2\
+&amp;\sigma_i \sigma_{i+1} \sigma_i = \sigma_{i+1} \sigma_i \sigma_{i+1}
+\end{align</em>}
+$$</p>
+<p>The first equation is the easier one to see. If we were to draw the braid
+diagram you can see that indeed elements commute so long as they are
+sufficiently far away from each other. This is just because a transposition
+cannot interact with another transposition of unrelated elements. For an
+analogy, consider how transpositions $\tau_1, \tau_2 \in S_n$ commute with each
+other so long their non-trivial orbits don't intersect.  </p>
+<p>The second fact is a little more difficult to see but follow from the following
+picture:</p>
+<p>[Jones' picture]</p>
+<p>If we want to look at this like braid concatenation then we have something like:</p>
+<p>[my picture]</p>
+<p>A little hard to visualize what's going on, but hopefully you are convinced. Now
+that we know these relations, we have a presentation for the braid group</p>
+<p>$$
+B_n = \langle \sigma_1,...,\sigma_{n-1}\mid \sigma_i\sigma_{i+1}\sigma_i =
+\sigma_{i+1}\sigma_i\sigma_{i+1},~\sigma_i\sigma_j = \sigma_j \sigma_i
+$$</p>
+<p>For the first set of relations remember that $1 \le i \le n-2$ and for the second set of relations remember that $|i-j|\ge 2$!  </p>
+<p>The braid relations give us hope for minding a representation of $B_n$. We can
+construct a family of matrices satisfying the braid relations. One such family
+is:</p>
+<p>$$
+    \sigma_i \mapsto \begin{pmatrix}I_{i-1} &amp; 0 &amp; 0 &amp; 0\ 0 &amp; 1-t &amp; t &amp; 0 \ 0 &amp; 1
+    &amp; 0 &amp; 0 \ 0 &amp; 0 &amp; 0 &amp; I_{n-i-1}\end{pmatrix}
+$$</p>
+<p>which is called the "unreduced Burau representation". If we quotient by the 1-dim
+invariant subspace then we get the "reduced Burau representation". We should see
+the representation as a homomorphism $\varphi: B_n \to GL(\mathbb{Z}[t,
+t^{-1}])$. This homomorphism is injective for $n \le 3$ and non-injective for $n
+\ge 5$, faithfulness when $n=4$ is a major open question.  </p>
+<h2>Temperley Lieb algebra</h2>
+<p>Vaughan Jones discovered the Jones polynomial while studying the Temperley Lieb
+algebra. It was originally encountered by Temperley and Lieb in their work on
+statistical mechanics, but ended up being related to integrable models, knot
+theory and the braid group, quantum groups and subfactors of von Neumann
+algebras (according to Wikipedia). Of course, we bring it up now because of its
+relationship with the braid group.  </p>
+<h3>First definition of Temperley Lieb algebra</h3>
+<p><strong>Define.</strong> For $\tau in \mathbb{C}$, $TL_{n+1}(\tau)$ is the associative unital
+$*$-algebra with generators $e_1, e_2,...,e_n$ and relations  </p>
+<ul>
+<li>$e_{i}^2 = e_i, e_i^*$  </li>
+<li>$e_i e_j = e_j e_i$ for $|i-j| \ge 2$  </li>
+<li>$e_ie_{i\pm 1}e_i = \tau e_i  </li>
+</ul>
+            </div>
+        </article>
+    </section>
+</article>
+
+<!-- Footer
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+--->
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-141137456-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</body>
+</html>
