@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-03T12:40:42-08:00</updated><entry><title>Lecture Series (TQC group) - Braid relations, matrix representations, and the Temperley Lieb algebra</title><link href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html" rel="alternate"></link><published>2023-02-03T12:40:42-08:00</published><updated>2023-02-03T12:40:42-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-03:/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-03T12:52:11-08:00</updated><entry><title>Lecture Series (TQC group) - Braid relations, matrix representations, and the Temperley Lieb algebra</title><link href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html" rel="alternate"></link><published>2023-02-03T12:52:11-08:00</published><updated>2023-02-03T12:52:11-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-03:/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is ultimately part of a lecture series given in the topological quantum
 computing reading group. The notes in the past were either beamer slides or some
 handwritten notes, but I decided to give this format a try since it makes
-everything easier.  &lt;/p&gt;
-&lt;p&gt;For a brief recap, we previously …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+everything easier. Readers should note these notes are …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is ultimately part of a lecture series given in the topological quantum
 computing reading group. The notes in the past were either beamer slides or some
 handwritten notes, but I decided to give this format a try since it makes
-everything easier.  &lt;/p&gt;
+everything easier. Readers should note these notes are not original to me, and
+are based on &lt;a href="https://math.berkeley.edu/~vfr/jonesakl.pdf"&gt;Jones's notes&lt;/a&gt;,
+various Wikipedia articles, and on occasion, other resources.&lt;/p&gt;
 &lt;p&gt;For a brief recap, we previously defined knots, knot invariance, and computed some examples of
 knot polynomials. In the lecture before this one, we covered the braid group and
 how links arise as closures of braids by a theorem of Alexander's.  &lt;/p&gt;
