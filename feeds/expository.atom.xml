@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - expository</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/expository.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-03T12:28:53-08:00</updated><entry><title>Lecture Series (TQC group) - Braid relations, matrix representations, and the Temperley Lieb algebra</title><link href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html" rel="alternate"></link><published>2023-02-03T12:28:53-08:00</published><updated>2023-02-03T12:28:53-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-03:/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - expository</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/expository.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-03T12:36:56-08:00</updated><entry><title>Lecture Series (TQC group) - Braid relations, matrix representations, and the Temperley Lieb algebra</title><link href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html" rel="alternate"></link><published>2023-02-03T12:36:56-08:00</published><updated>2023-02-03T12:36:56-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-03:/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is ultimately part of a lecture series given in the topological quantum
 computing reading group. The notes in the past were either beamer slides or some
 handwritten notes, but I decided to give this format a try since it makes
@@ -49,8 +49,18 @@ is:&lt;/p&gt;
 &lt;div class="math"&gt;$$\sigma_i \mapsto \begin{pmatrix}I_{i-1} &amp;amp; 0 &amp;amp; 0 &amp;amp; 0\\ 0 &amp;amp; 1-t &amp;amp; t &amp;amp; 0 \\ 0 &amp;amp; 1
     &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; I_{n-i-1}\end{pmatrix}$$&lt;/div&gt;
 &lt;p&gt;which is called the "unreduced Burau representation". If we quotient by the 1-dim
-invariant subspace then we get the "reduced Burau representation". We should see
-the representation as a homomorphism &lt;span class="math"&gt;\(\varphi: B_n \to GL(\mathbb{Z}[t,
+invariant subspace then we get the "reduced Burau representation". The reduced
+Burau representation (for &lt;span class="math"&gt;\(n \ge 3\)&lt;/span&gt;) is given by:&lt;/p&gt;
+&lt;div class="math"&gt;$$\begin{align*}
+\sigma_1 \mapsto \begin{pmatrix}-t &amp;amp; 1 &amp;amp; 0 \\ 0 &amp;amp; 1 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; I_{n-3}\end{pmatrix} \\
+\sigma_i \mapsto \begin{pmatrix}I_{n-2} &amp;amp; 0 &amp;amp; 0 &amp;amp;0 &amp;amp;0\\ 
+0 &amp;amp; 1 &amp;amp; 0 &amp;amp;0 &amp;amp; 0\\
+0 &amp;amp; t&amp;amp; -t &amp;amp; 1 &amp;amp; 0 \\ 
+0 &amp;amp;0 &amp;amp;0 &amp;amp; 1 &amp;amp; 0 \\ 
+0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; I_{n-i-2}\end{pmatrix}\\
+\sigma_{n-1} \mapsto \begin{pmatrix}I_{n-3} &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 1 &amp;amp; 0 \\ 0 &amp;amp; t &amp;amp; -t\end{pmatrix}
+\end{align*}$$&lt;/div&gt;
+&lt;p&gt;We should see the representation as a homomorphism &lt;span class="math"&gt;\(\varphi: B_n \to GL(\mathbb{Z}[t,
 t^{-1}])\)&lt;/span&gt;. This homomorphism is injective for &lt;span class="math"&gt;\(n \le 3\)&lt;/span&gt; and non-injective for &lt;span class="math"&gt;\(n
 \ge 5\)&lt;/span&gt;, faithfulness when &lt;span class="math"&gt;\(n=4\)&lt;/span&gt; is a major open question.  &lt;/p&gt;
 &lt;h2&gt;Temperley Lieb algebra&lt;/h2&gt;
