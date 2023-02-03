@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>[protected] Some encrypted page</title>
+        <title>Some encrypted page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Daniel Tobias">
@@ -31,12 +31,12 @@
 
     <meta name="twitter:creator" content="">
     <meta name="twitter:url" content="https://uberyb.github.io/some-encrypted-page.html">
-    <meta name="twitter:title" content="Daniel Tobias ~ [protected] Some encrypted page">
-    <meta name="twitter:description" content="rdIQkd2O4IJMVtyYEPzLMg==;TdN0zH+MOg8rQSk2k37BX66PMyswzrfZnUpfN7ukfBw=;^ This content is encrypted. Please don&#39;t share it. Password Decrypt (function () { var strip_padding = function (padded_content, padding_char) { /* * Strips the padding character from decrypted content. */ for (var i = padded_content.length; i &gt; 0; i--) { if (padded_content[i - 1] !== padding_char) { return padded_content.slice(0, i); } } }; var decrypt_content = function (password, iv_b64, ciphertext_b64 …">
+    <meta name="twitter:title" content="Daniel Tobias ~ Some encrypted page">
+    <meta name="twitter:description" content="dog dog dog">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Daniel Tobias ~ [protected] Some encrypted page"/>
-    <meta property="og:description" content="rdIQkd2O4IJMVtyYEPzLMg==;TdN0zH+MOg8rQSk2k37BX66PMyswzrfZnUpfN7ukfBw=;^ This content is encrypted. Please don&#39;t share it. Password Decrypt (function () { var strip_padding = function (padded_content, padding_char) { /* * Strips the padding character from decrypted content. */ for (var i = padded_content.length; i &gt; 0; i--) { if (padded_content[i - 1] !== padding_char) { return padded_content.slice(0, i); } } }; var decrypt_content = function (password, iv_b64, ciphertext_b64 …"/>
+    <meta property="og:title" content="Daniel Tobias ~ Some encrypted page"/>
+    <meta property="og:description" content="dog dog dog"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -81,111 +81,9 @@
     <section id="content">
         <article>
             <h2 class="post_title post_detail"><a href="https://uberyb.github.io/some-encrypted-page.html" rel="bookmark"
-                                                  title="Permalink to [protected] Some encrypted page">[protected] Some encrypted page</a></h2>
+                                                  title="Permalink to Some encrypted page">Some encrypted page</a></h2>
             <div class="entry-content blog-post">
-                <div id="pec-encrypted-content" style="display:none">rdIQkd2O4IJMVtyYEPzLMg==;TdN0zH+MOg8rQSk2k37BX66PMyswzrfZnUpfN7ukfBw=;^</div>
-<div id="pec-decrypted-content">
-    <h4><i>This content is encrypted. Please don't share it.</i></h4>
-</div>
-
-<form id="pec-decrypt-form">
-    <label for="pec-content-password">Password</label>
-    <input type="password" id="pec-content-password" placeholder="Password" />
-    <button type="button" id="pec-decrypt-content">Decrypt</button>
-</form>
-
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/pad-nopadding.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"></script>
-
-
-<script type="text/javascript">
-    (function () {
-        var strip_padding = function (padded_content, padding_char) {
-            /*
-             * Strips the padding character from decrypted content.
-             */
-            for (var i = padded_content.length; i > 0; i--) {
-                if (padded_content[i - 1] !== padding_char) {
-                    return padded_content.slice(0, i);
-                }
-            }
-        };
-
-        var decrypt_content = function (password, iv_b64, ciphertext_b64, padding_char) {
-            /*
-             * Decrypts the content from the ciphertext bundle.
-             */
-            var key = CryptoJS.MD5(password),
-                iv = CryptoJS.enc.Base64.parse(iv_b64),
-                ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
-                bundle = {
-                    key: key,
-                    iv: iv,
-                    ciphertext: ciphertext
-                };
-
-            var plaintext = CryptoJS.AES.decrypt(bundle, key, { iv: iv, padding: CryptoJS.pad.NoPadding });
-
-            try {
-                return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
-            }
-            catch (err) {
-                // encoding failed; wrong password
-                return false;
-            }
-        };
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var decrypt_btn = document.getElementById('pec-decrypt-content'),
-                password_input = document.getElementById('pec-content-password'),
-                encrypted_content = document.getElementById('pec-encrypted-content'),
-                decrypted_content = document.getElementById('pec-decrypted-content'),
-                decrypt_form = document.getElementById('pec-decrypt-form');
-
-            var decrypt_document = function (event) {
-                // grab the ciphertext bundle
-                var parts = encrypted_content.innerHTML.split(';');
-
-                // decrypt it
-                var content = decrypt_content(
-                    password_input.value,
-                    parts[0],
-                    parts[1],
-                    parts[2]
-                );
-
-                if (content) {
-                    // success; display the decrypted content
-                    decrypted_content.innerHTML = content;
-                    decrypt_form.parentNode.removeChild(decrypt_form);
-                    encrypted_content.parentNode.removeChild(encrypted_content);
-
-                    // any post processing on the decrypted content should be done here
-                }
-                else {
-                    // ¯\_(ツ)_/¯
-                    password_input.value = '';
-                }
-                event.preventDefault();
-                return false;
-            }
-            
-            decrypt_btn.addEventListener('click', decrypt_document);
-            decrypt_form.addEventListener('submit', decrypt_document);
-        });
-    })();
-</script>
+                <p>dog dog dog</p>
             </div>
         </article>
     </section>

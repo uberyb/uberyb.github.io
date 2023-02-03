@@ -119,18 +119,14 @@ picture:</p>
 <p>[my picture]</p>
 <p>A little hard to visualize what's going on, but hopefully you are convinced. Now
 that we know these relations, we have a presentation for the braid group</p>
-<p>$$
-B_n = \langle \sigma_1,...,\sigma_{n-1}\mid \sigma_i\sigma_{i+1}\sigma_i =
-\sigma_{i+1}\sigma_i\sigma_{i+1},~\sigma_i\sigma_j = \sigma_j \sigma_i
-$$</p>
+<p>$$B_n = \langle \sigma_1,...,\sigma_{n-1}\mid \sigma_i\sigma_{i+1}\sigma_i =
+\sigma_{i+1}\sigma_i\sigma_{i+1},~\sigma_i\sigma_j = \sigma_j \sigma_i$$</p>
 <p>For the first set of relations remember that $1 \le i \le n-2$ and for the second set of relations remember that $|i-j|\ge 2$!  </p>
 <p>The braid relations give us hope for minding a representation of $B_n$. We can
 construct a family of matrices satisfying the braid relations. One such family
 is:</p>
-<p>$$
-    \sigma_i \mapsto \begin{pmatrix}I_{i-1} &amp; 0 &amp; 0 &amp; 0\ 0 &amp; 1-t &amp; t &amp; 0 \ 0 &amp; 1
-    &amp; 0 &amp; 0 \ 0 &amp; 0 &amp; 0 &amp; I_{n-i-1}\end{pmatrix}
-$$</p>
+<p>$$\sigma_i \mapsto \begin{pmatrix}I_{i-1} &amp; 0 &amp; 0 &amp; 0\ 0 &amp; 1-t &amp; t &amp; 0 \ 0 &amp; 1
+    &amp; 0 &amp; 0 \ 0 &amp; 0 &amp; 0 &amp; I_{n-i-1}\end{pmatrix}$$</p>
 <p>which is called the "unreduced Burau representation". If we quotient by the 1-dim
 invariant subspace then we get the "reduced Burau representation". We should see
 the representation as a homomorphism $\varphi: B_n \to GL(\mathbb{Z}[t,
