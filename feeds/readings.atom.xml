@@ -6,35 +6,97 @@
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Something I was happy to learn in this meeting was the definition of a TQFT.
-First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds $\Sigma_0$ and …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
+First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds &lt;span class="math"&gt;\(\Sigma_0\)&lt;/span&gt; and …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
 &lt;h2&gt;Meeting Notes&lt;/h2&gt;
 &lt;p&gt;11/07/2022  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Something I was happy to learn in this meeting was the definition of a TQFT.
-First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds $\Sigma_0$ and $\Sigma_1$ which is a compact manifold $M$ such that
-$\partial M = \Sigma_0 \sqcup \Sigma_1$. Then we have a category of cobordisms which we'll
-denote $\text{Cob}(d)$ which are $d$-dimensional orientable cobordisms. Note
-that the dimension of the cobordisms is $+1$ dimension of the cobordant
+First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds &lt;span class="math"&gt;\(\Sigma_0\)&lt;/span&gt; and &lt;span class="math"&gt;\(\Sigma_1\)&lt;/span&gt; which is a compact manifold &lt;span class="math"&gt;\(M\)&lt;/span&gt; such that
+&lt;span class="math"&gt;\(\partial M = \Sigma_0 \sqcup \Sigma_1\)&lt;/span&gt;. Then we have a category of cobordisms which we'll
+denote &lt;span class="math"&gt;\(\text{Cob}(d)\)&lt;/span&gt; which are &lt;span class="math"&gt;\(d\)&lt;/span&gt;-dimensional orientable cobordisms. Note
+that the dimension of the cobordisms is &lt;span class="math"&gt;\(+1\)&lt;/span&gt; dimension of the cobordant
 manifolds.  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The objects are $d$ dimensional, smooth, oriented, and closed manifolds.  &lt;/li&gt;
-&lt;li&gt;Morphisms are cobordisms (so $d+1$ dimensional manifolds) $M$ with $\partial M: \Sigma_0 \to \Sigma_1$. $M$ is a morphism $M : \Sigma_0 \to \Sigma_1$.  &lt;/li&gt;
+&lt;li&gt;The objects are &lt;span class="math"&gt;\(d\)&lt;/span&gt; dimensional, smooth, oriented, and closed manifolds.  &lt;/li&gt;
+&lt;li&gt;Morphisms are cobordisms (so &lt;span class="math"&gt;\(d+1\)&lt;/span&gt; dimensional manifolds) &lt;span class="math"&gt;\(M\)&lt;/span&gt; with &lt;span class="math"&gt;\(\partial M: \Sigma_0 \to \Sigma_1\)&lt;/span&gt;. &lt;span class="math"&gt;\(M\)&lt;/span&gt; is a morphism &lt;span class="math"&gt;\(M : \Sigma_0 \to \Sigma_1\)&lt;/span&gt;.  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Now if $\mathbb{K}$ is a field, a $(2+1)$ dimensional TQFT is an
-$\otimes$-Functor $Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})$.&lt;/p&gt;
+&lt;p&gt;Now if &lt;span class="math"&gt;\(\mathbb{K}\)&lt;/span&gt; is a field, a &lt;span class="math"&gt;\((2+1)\)&lt;/span&gt; dimensional TQFT is an
+&lt;span class="math"&gt;\(\otimes\)&lt;/span&gt;-Functor &lt;span class="math"&gt;\(Z: \text{Cob}(d) \to \text{Vec}(\mathbb{K})\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;This definition sets up some other nice things, like allowing us to call a TQFT
-Hermitian ($Z(-M) = Z(M)^*$ for $\mathbb{K} = \mathbb{C}$) and unitarity such
-that $Z(\Sigma)$ is a Hilbert space.&lt;/p&gt;
+Hermitian (&lt;span class="math"&gt;\(Z(-M) = Z(M)^*\)&lt;/span&gt; for &lt;span class="math"&gt;\(\mathbb{K} = \mathbb{C}\)&lt;/span&gt;) and unitarity such
+that &lt;span class="math"&gt;\(Z(\Sigma)\)&lt;/span&gt; is a Hilbert space.&lt;/p&gt;
 &lt;p&gt;Somewhat unrelated we discussed anyons which are important because
 non-abelian anyons can be used in the contruction of a topological quantum
 computer (&lt;a href="https://arxiv.org/abs/quant-ph/0101025"&gt;Kitaev, Freedman, Larsen, Wang&lt;/a&gt;).
-Abelian anyons seemed simple enough to define. For operators $T_1, T_2$ we have
-that $[T_1, T_2] = e^{i \theta}$. This means if we exchange the states of two
+Abelian anyons seemed simple enough to define. For operators &lt;span class="math"&gt;\(T_1, T_2\)&lt;/span&gt; we have
+that &lt;span class="math"&gt;\([T_1, T_2] = e^{i \theta}\)&lt;/span&gt;. This means if we exchange the states of two
 (abelian) anyons then the state of the joint system only changes by some phase.
 I may write about this more either in future meetings notes or a modification of
-this one.&lt;/p&gt;</content><category term="readings"></category></entry><entry><title>Quantum Complexity reading group (started 10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html" rel="alternate"></link><published>2023-01-13T08:06:44-08:00</published><updated>2023-01-13T08:06:44-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/quantum-complexity-reading-group-started-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
+this one.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="readings"></category></entry><entry><title>Quantum Complexity reading group (started 10/2022)</title><link href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html" rel="alternate"></link><published>2023-01-13T08:06:44-08:00</published><updated>2023-01-13T08:06:44-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/quantum-complexity-reading-group-started-102022.html</id><summary type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Background&lt;/h2&gt;
 &lt;p&gt;This reading group was started by &lt;a href="https://sanchayandutta.cs.ucdavis.edu/"&gt;Sanchayan Dutta&lt;/a&gt; to study complexity theory. Ultimately, we seek to gain a background in &lt;a href="https://arxiv.org/abs/1309.7495"&gt;the quantum PCP conjecture&lt;/a&gt;. Each week various members of the reading group give a short presentation based on research, what we encounter in the notes, or related topics of interest. Slides from presentations will be uploaded when available and I'll link to some things which were interesting to me that I plan to go back and read about should I stop procrastinating.&lt;/p&gt;
 &lt;h3&gt;Resources&lt;/h3&gt;
@@ -49,7 +111,7 @@ this one.&lt;/p&gt;</content><category term="readings"></category></entry><entry
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/hamiltcomplex2.pdf"&gt;Hamiltonian Complexity Part 2&lt;/a&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/LocalHamiltonian_Part1.pdf"&gt;Local Hamiltonian Problem (Part1)&lt;/a&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/qmaoraclesep.pdf"&gt;Advice, Oracle Separation, QMA &amp;amp; QCMA&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/images/advice2.pdf"&gt;BQP/qpoly $\subseteq$ PP/poly&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/images/advice2.pdf"&gt;BQP/qpoly &lt;span class="math"&gt;\(\subseteq\)&lt;/span&gt; PP/poly&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Some interesting things mentioned to wiki&lt;/h2&gt;
 &lt;ul&gt;
@@ -65,6 +127,68 @@ this one.&lt;/p&gt;</content><category term="readings"></category></entry><entry
 &lt;li&gt;[x] Classical complexity reductions  &lt;/li&gt;
 &lt;li&gt;[x] Quantum advice &amp;amp; quantum oracles  &lt;/li&gt;
 &lt;li&gt;[ ] Quantum circuit complexity  &lt;/li&gt;
-&lt;li&gt;[x] BQP/qpoly $\subseteq$ PostBQP/poly $=$ PP/poly  &lt;/li&gt;
+&lt;li&gt;[x] BQP/qpoly &lt;span class="math"&gt;\(\subseteq\)&lt;/span&gt; PostBQP/poly &lt;span class="math"&gt;\(=\)&lt;/span&gt; PP/poly  &lt;/li&gt;
 &lt;li&gt;[ ] Results on the Solovay-Kitaev theorem  &lt;/li&gt;
-&lt;/ul&gt;</content><category term="readings"></category></entry><entry><title>Operator Algebras reading group</title><link href="https://uberyb.github.io/operator-algebras-reading-group.html" rel="alternate"></link><published>2022-10-26T12:14:16-07:00</published><updated>2022-10-26T12:14:16-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/operator-algebras-reading-group.html</id><content type="html">&lt;p&gt;(planned)&lt;/p&gt;</content><category term="readings"></category></entry></feed>
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="readings"></category></entry><entry><title>Operator Algebras reading group</title><link href="https://uberyb.github.io/operator-algebras-reading-group.html" rel="alternate"></link><published>2022-10-26T12:14:16-07:00</published><updated>2022-10-26T12:14:16-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-10-26:/operator-algebras-reading-group.html</id><content type="html">&lt;p&gt;(planned)&lt;/p&gt;</content><category term="readings"></category></entry></feed>

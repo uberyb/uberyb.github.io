@@ -13,25 +13,25 @@ everything easier.  &lt;/p&gt;
 knot polynomials. In the lecture before this one, we covered the braid group and
 how links arise as closures of braids by a theorem of Alexander's.  &lt;/p&gt;
 &lt;h2&gt;Braid relations (little review)&lt;/h2&gt;
-&lt;p&gt;There is a useful braid that we defined, $\sigma_i$ which can be defined with
+&lt;p&gt;There is a useful braid that we defined, &lt;span class="math"&gt;\(\sigma_i\)&lt;/span&gt; which can be defined with
 the braid diagram:&lt;/p&gt;
 &lt;p&gt;[braid diagram for sig_i]&lt;/p&gt;
 &lt;p&gt;Notice that if we forget the crossing structure of the braid and decide to see
-braids as elements of $S_n$ then $\sigma_i$ really is just a transposition
-between the $i$th and $i+1$th positions. It turns out that there are relations
-between the $\sigma_i \in B_n$ ($B_n$ is the braid group on $n$ strings) that
-allow us to write down a presentation for $B_n$.  &lt;/p&gt;
-&lt;p&gt;$$
-\begin{align&lt;em&gt;}
-&amp;amp;\sigma_i \sigma_j = \sigma_j \sigma_i \quad \text{if } |i-j| \ge 2\
+braids as elements of &lt;span class="math"&gt;\(S_n\)&lt;/span&gt; then &lt;span class="math"&gt;\(\sigma_i\)&lt;/span&gt; really is just a transposition
+between the &lt;span class="math"&gt;\(i\)&lt;/span&gt;th and &lt;span class="math"&gt;\(i+1\)&lt;/span&gt;th positions. It turns out that there are relations
+between the &lt;span class="math"&gt;\(\sigma_i \in B_n\)&lt;/span&gt; (&lt;span class="math"&gt;\(B_n\)&lt;/span&gt; is the braid group on &lt;span class="math"&gt;\(n\)&lt;/span&gt; strings) that
+allow us to write down a presentation for &lt;span class="math"&gt;\(B_n\)&lt;/span&gt;.  &lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align*}
+&amp;amp;\sigma_i \sigma_j = \sigma_j \sigma_i \quad \text{if } |i-j| \ge 2\\
 &amp;amp;\sigma_i \sigma_{i+1} \sigma_i = \sigma_{i+1} \sigma_i \sigma_{i+1}
-\end{align&lt;/em&gt;}
-$$&lt;/p&gt;
+\end{align*}
+$$&lt;/div&gt;
 &lt;p&gt;The first equation is the easier one to see. If we were to draw the braid
 diagram you can see that indeed elements commute so long as they are
 sufficiently far away from each other. This is just because a transposition
 cannot interact with another transposition of unrelated elements. For an
-analogy, consider how transpositions $\tau_1, \tau_2 \in S_n$ commute with each
+analogy, consider how transpositions &lt;span class="math"&gt;\(\tau_1, \tau_2 \in S_n\)&lt;/span&gt; commute with each
 other so long their non-trivial orbits don't intersect.  &lt;/p&gt;
 &lt;p&gt;The second fact is a little more difficult to see but follow from the following
 picture:&lt;/p&gt;
@@ -40,19 +40,19 @@ picture:&lt;/p&gt;
 &lt;p&gt;[my picture]&lt;/p&gt;
 &lt;p&gt;A little hard to visualize what's going on, but hopefully you are convinced. Now
 that we know these relations, we have a presentation for the braid group&lt;/p&gt;
-&lt;p&gt;$$B_n = \langle \sigma_1,...,\sigma_{n-1}\mid \sigma_i\sigma_{i+1}\sigma_i =
-\sigma_{i+1}\sigma_i\sigma_{i+1},~\sigma_i\sigma_j = \sigma_j \sigma_i$$&lt;/p&gt;
-&lt;p&gt;For the first set of relations remember that $1 \le i \le n-2$ and for the second set of relations remember that $|i-j|\ge 2$!  &lt;/p&gt;
-&lt;p&gt;The braid relations give us hope for minding a representation of $B_n$. We can
+&lt;div class="math"&gt;$$B_n = \langle \sigma_1,...,\sigma_{n-1}\mid \sigma_i\sigma_{i+1}\sigma_i =
+\sigma_{i+1}\sigma_i\sigma_{i+1},~\sigma_i\sigma_j = \sigma_j \sigma_i$$&lt;/div&gt;
+&lt;p&gt;For the first set of relations remember that &lt;span class="math"&gt;\(1 \le i \le n-2\)&lt;/span&gt; and for the second set of relations remember that &lt;span class="math"&gt;\(|i-j|\ge 2\)&lt;/span&gt;!  &lt;/p&gt;
+&lt;p&gt;The braid relations give us hope for minding a representation of &lt;span class="math"&gt;\(B_n\)&lt;/span&gt;. We can
 construct a family of matrices satisfying the braid relations. One such family
 is:&lt;/p&gt;
-&lt;p&gt;$$\sigma_i \mapsto \begin{pmatrix}I_{i-1} &amp;amp; 0 &amp;amp; 0 &amp;amp; 0\ 0 &amp;amp; 1-t &amp;amp; t &amp;amp; 0 \ 0 &amp;amp; 1
-    &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; I_{n-i-1}\end{pmatrix}$$&lt;/p&gt;
+&lt;div class="math"&gt;$$\sigma_i \mapsto \begin{pmatrix}I_{i-1} &amp;amp; 0 &amp;amp; 0 &amp;amp; 0\\ 0 &amp;amp; 1-t &amp;amp; t &amp;amp; 0 \\ 0 &amp;amp; 1
+    &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; I_{n-i-1}\end{pmatrix}$$&lt;/div&gt;
 &lt;p&gt;which is called the "unreduced Burau representation". If we quotient by the 1-dim
 invariant subspace then we get the "reduced Burau representation". We should see
-the representation as a homomorphism $\varphi: B_n \to GL(\mathbb{Z}[t,
-t^{-1}])$. This homomorphism is injective for $n \le 3$ and non-injective for $n
-\ge 5$, faithfulness when $n=4$ is a major open question.  &lt;/p&gt;
+the representation as a homomorphism &lt;span class="math"&gt;\(\varphi: B_n \to GL(\mathbb{Z}[t,
+t^{-1}])\)&lt;/span&gt;. This homomorphism is injective for &lt;span class="math"&gt;\(n \le 3\)&lt;/span&gt; and non-injective for &lt;span class="math"&gt;\(n
+\ge 5\)&lt;/span&gt;, faithfulness when &lt;span class="math"&gt;\(n=4\)&lt;/span&gt; is a major open question.  &lt;/p&gt;
 &lt;h2&gt;Temperley Lieb algebra&lt;/h2&gt;
 &lt;p&gt;Vaughan Jones discovered the Jones polynomial while studying the Temperley Lieb
 algebra. It was originally encountered by Temperley and Lieb in their work on
@@ -61,160 +61,82 @@ theory and the braid group, quantum groups and subfactors of von Neumann
 algebras (according to Wikipedia). Of course, we bring it up now because of its
 relationship with the braid group.  &lt;/p&gt;
 &lt;h3&gt;First definition of Temperley Lieb algebra&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Define.&lt;/strong&gt; For $\tau in \mathbb{C}$, $TL_{n+1}(\tau)$ is the associative unital
-$*$-algebra with generators $e_1, e_2,...,e_n$ and relations  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Define.&lt;/strong&gt; For &lt;span class="math"&gt;\(\tau in \mathbb{C}\)&lt;/span&gt;, &lt;span class="math"&gt;\(TL_{n+1}(\tau)\)&lt;/span&gt; is the associative unital
+&lt;span class="math"&gt;\(*\)&lt;/span&gt;-algebra with generators &lt;span class="math"&gt;\(e_1, e_2,...,e_n\)&lt;/span&gt; and relations  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;$e_{i}^2 = e_i, e_i^*$  &lt;/li&gt;
-&lt;li&gt;$e_i e_j = e_j e_i$ for $|i-j| \ge 2$  &lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(e_{i}^2 = e_i, e_i^*\)&lt;/span&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(e_i e_j = e_j e_i\)&lt;/span&gt; for &lt;span class="math"&gt;\(|i-j| \ge 2\)&lt;/span&gt;  &lt;/li&gt;
 &lt;li&gt;$e_ie_{i\pm 1}e_i = \tau e_i  &lt;/li&gt;
-&lt;/ul&gt;</content><category term="expository"></category></entry><entry><title>[protected] Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:43:08-08:00</published><updated>2023-02-01T18:43:08-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><summary type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;6bcExlRbIiUVT0BlXrX1Xw==;L265/kuocxoSTKF4Ab+L6dz4VZYhBf9n1JirErhHluw=;^&lt;/div&gt;
-&lt;div id="pec-decrypted-content"&gt;
-    &lt;h4&gt;&lt;i&gt;This content is encrypted. Please don't share it.&lt;/i&gt;&lt;/h4&gt;
-&lt;/div&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
 
-&lt;form id="pec-decrypt-form"&gt;
-    &lt;label for="pec-content-password"&gt;Password&lt;/label&gt;
-    &lt;input type="password" id="pec-content-password" placeholder="Password" /&gt;
-    &lt;button type="button" id="pec-decrypt-content"&gt;Decrypt&lt;/button&gt;
-&lt;/form&gt;
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
 
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
 
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"&gt;&lt;/script&gt;
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
 
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/pad-nopadding.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"&gt;&lt;/script&gt;
-
-
-&lt;script type="text/javascript"&gt;
-    (function () {
-        var strip_padding = function (padded_content, padding_char) {
-            /*
-             * Strips the padding character from decrypted content.
-             */
-            for (var i = padded_content.length; i &gt; 0; i--) {
-                if (padded_content[i - 1] !== padding_char) {
-                    return padded_content.slice(0, i);
-                }
-            }
-        };
-
-        var decrypt_content = function (password, iv_b64 …&lt;/script&gt;</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;6bcExlRbIiUVT0BlXrX1Xw==;L265/kuocxoSTKF4Ab+L6dz4VZYhBf9n1JirErhHluw=;^&lt;/div&gt;
-&lt;div id="pec-decrypted-content"&gt;
-    &lt;h4&gt;&lt;i&gt;This content is encrypted. Please don't share it.&lt;/i&gt;&lt;/h4&gt;
-&lt;/div&gt;
-
-&lt;form id="pec-decrypt-form"&gt;
-    &lt;label for="pec-content-password"&gt;Password&lt;/label&gt;
-    &lt;input type="password" id="pec-content-password" placeholder="Password" /&gt;
-    &lt;button type="button" id="pec-decrypt-content"&gt;Decrypt&lt;/button&gt;
-&lt;/form&gt;
-
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/cipher-core.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/pad-nopadding.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/aes.js"&gt;&lt;/script&gt;
-
-
-&lt;script type="text/javascript"&gt;
-    (function () {
-        var strip_padding = function (padded_content, padding_char) {
-            /*
-             * Strips the padding character from decrypted content.
-             */
-            for (var i = padded_content.length; i &gt; 0; i--) {
-                if (padded_content[i - 1] !== padding_char) {
-                    return padded_content.slice(0, i);
-                }
-            }
-        };
-
-        var decrypt_content = function (password, iv_b64, ciphertext_b64, padding_char) {
-            /*
-             * Decrypts the content from the ciphertext bundle.
-             */
-            var key = CryptoJS.MD5(password),
-                iv = CryptoJS.enc.Base64.parse(iv_b64),
-                ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
-                bundle = {
-                    key: key,
-                    iv: iv,
-                    ciphertext: ciphertext
-                };
-
-            var plaintext = CryptoJS.AES.decrypt(bundle, key, { iv: iv, padding: CryptoJS.pad.NoPadding });
-
-            try {
-                return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
-            }
-            catch (err) {
-                // encoding failed; wrong password
-                return false;
-            }
-        };
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var decrypt_btn = document.getElementById('pec-decrypt-content'),
-                password_input = document.getElementById('pec-content-password'),
-                encrypted_content = document.getElementById('pec-encrypted-content'),
-                decrypted_content = document.getElementById('pec-decrypted-content'),
-                decrypt_form = document.getElementById('pec-decrypt-form');
-
-            var decrypt_document = function (event) {
-                // grab the ciphertext bundle
-                var parts = encrypted_content.innerHTML.split(';');
-
-                // decrypt it
-                var content = decrypt_content(
-                    password_input.value,
-                    parts[0],
-                    parts[1],
-                    parts[2]
-                );
-
-                if (content) {
-                    // success; display the decrypted content
-                    decrypted_content.innerHTML = content;
-                    decrypt_form.parentNode.removeChild(decrypt_form);
-                    encrypted_content.parentNode.removeChild(encrypted_content);
-
-                    // any post processing on the decrypted content should be done here
-                }
-                else {
-                    // ¯\_(ツ)_/¯
-                    password_input.value = '';
-                }
-                event.preventDefault();
-                return false;
-            }
-            
-            decrypt_btn.addEventListener('click', decrypt_document);
-            decrypt_form.addEventListener('submit', decrypt_document);
-        });
-    })();
-&lt;/script&gt;</content><category term="expository"></category></entry><entry><title>Kauffman &amp; Jones polynomial of Hopf link</title><link href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html" rel="alternate"></link><published>2023-01-18T12:43:14-08:00</published><updated>2023-01-18T12:43:14-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-18:/kauffman-jones-polynomial-of-hopf-link.html</id><summary type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  &lt;/p&gt;
-&lt;p&gt;&lt;u&gt;Define.&lt;/u&gt; A knot is a closed curve seen as a subset $K \subset S^3$ which
-should be interpreted as $\mathbb{R}$ plus a point at infinity.  &lt;/p&gt;
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="expository"></category></entry><entry><title>Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:43:08-08:00</published><updated>2023-02-01T18:43:08-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><content type="html">&lt;p&gt;dog dog dog&lt;/p&gt;</content><category term="expository"></category></entry><entry><title>Kauffman &amp; Jones polynomial of Hopf link</title><link href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html" rel="alternate"></link><published>2023-01-18T12:43:14-08:00</published><updated>2023-01-18T12:43:14-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-18:/kauffman-jones-polynomial-of-hopf-link.html</id><summary type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This exercise came out of a series of lectures given for the &lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt; reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of &lt;a href="https://math.berkeley.edu/~vfr/"&gt;Vaughan Jones&lt;/a&gt;. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  &lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Define.&lt;/u&gt; A knot is a closed curve seen as a subset &lt;span class="math"&gt;\(K \subset S^3\)&lt;/span&gt; which
+should be interpreted as &lt;span class="math"&gt;\(\mathbb{R}\)&lt;/span&gt; plus a point at infinity.  &lt;/p&gt;
 &lt;p&gt;There are reasons for why the point at infinity is useful (although it is not
-relevant to the current task) and I believe containing the knot in $S^3$ is done
+relevant to the current task) and I believe containing the knot in &lt;span class="math"&gt;\(S^3\)&lt;/span&gt; is done
 so that we can fit the whole knot in a compact space. There are some operations
 on knots, but all we need here is to understand that knots can be &lt;em&gt;linked&lt;/em&gt;. A
-link $L$ is a collection of non-intersecting knots that are "linked" together. A
+link &lt;span class="math"&gt;\(L\)&lt;/span&gt; is a collection of non-intersecting knots that are "linked" together. A
 good example of this is the Borromean link  &lt;/p&gt;
 &lt;p&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Borromean_Rings_Illusion_%28transparent%29.png/1024px-Borromean_Rings_Illusion_%28transparent%29.png" alt="Borromean Rings" width="200" /&gt;&lt;/p&gt;
 &lt;p&gt;Each ring here (which is really just a circle) is called an "unknot". Observe
@@ -227,16 +149,16 @@ interpreted as the string which passes under the other string in the crossing.  
 &lt;p&gt;One goal of knot theory is to classify knots. One way we can do this is to
 capture a knot with algebraic information. In the case of the Jones polynomial
 one must use a Laurent polynomial. First I'll start with a more general
-polynomial for knots known as the &lt;a href="https://en.wikipedia.org/wiki/Bracket_polynomial"&gt;Kauffman bracket&lt;/a&gt; which is most easily defined inductively. For any link $L$ the Kauffman bracket $\langle L \rangle$ is&lt;/p&gt;
+polynomial for knots known as the &lt;a href="https://en.wikipedia.org/wiki/Bracket_polynomial"&gt;Kauffman bracket&lt;/a&gt; which is most easily defined inductively. For any link &lt;span class="math"&gt;\(L\)&lt;/span&gt; the Kauffman bracket &lt;span class="math"&gt;\(\langle L \rangle\)&lt;/span&gt; is&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;$\langle L \rangle = 1$ if $L$ is the unknot.  &lt;/li&gt;
-&lt;li&gt;$\langle \times \rangle = A \langle || \rangle + A^{-1} \langle = \rangle$  &lt;/li&gt;
-&lt;li&gt;$\langle U \sqcup L = (-A^2 - A^{-2})\langle L \rangle$ (where $U$ is the
-     unknot and $L$ is some link)  &lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(\langle L \rangle = 1\)&lt;/span&gt; if &lt;span class="math"&gt;\(L\)&lt;/span&gt; is the unknot.  &lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(\langle \times \rangle = A \langle || \rangle + A^{-1} \langle = \rangle\)&lt;/span&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;span class="math"&gt;\(\langle U \sqcup L = (-A^2 - A^{-2})\langle L \rangle\)&lt;/span&gt; (where &lt;span class="math"&gt;\(U\)&lt;/span&gt; is the
+     unknot and &lt;span class="math"&gt;\(L\)&lt;/span&gt; is some link)  &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Rule 2 will require further explanation. The symbols $\times$, $||$, and $=$ are
-meant to be seen as physical string. $\times$ implies there is a crossing, $||$
-implies the strings are vertical and parallel whereas $=$ implies the strings
+&lt;p&gt;Rule 2 will require further explanation. The symbols &lt;span class="math"&gt;\(\times\)&lt;/span&gt;, &lt;span class="math"&gt;\(||\)&lt;/span&gt;, and &lt;span class="math"&gt;\(=\)&lt;/span&gt; are
+meant to be seen as physical string. &lt;span class="math"&gt;\(\times\)&lt;/span&gt; implies there is a crossing, &lt;span class="math"&gt;\(||\)&lt;/span&gt;
+implies the strings are vertical and parallel whereas &lt;span class="math"&gt;\(=\)&lt;/span&gt; implies the strings
 are horizontal and parallel. The idea is to "smooth" or reduce knot crossings
 into the sum of these two components. &lt;/p&gt;
 &lt;p&gt;So we can decompose the Hopf link using a recursive approach in a sort of tree
@@ -244,17 +166,157 @@ structure such as:  &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Kauffman bracket of the Hopf link" src="https://uberyb.github.io/images/knots/2.png"&gt;  &lt;/p&gt;
 &lt;p&gt;The diagram starts with the Hopf link and then we apply a single smoothing to a single crossing. I label the edges of my graph by the coefficient attached to the smoothing given by rule 2. The bottom middle two nodes of the tree are just unknots, and so their Kauffman brackets
 are constant 1. Now the bottom left and bottom right nodes are regular isotopies of another (meaning one can be transformed to the other by &lt;a href="https://en.wikipedia.org/wiki/Reidemeister_move"&gt;Reidemeister move's&lt;/a&gt; of type II and III). All that remains is to compute the Kauffman bracket of the double unkot.  &lt;/p&gt;
-&lt;p&gt;By rule (1) a single unknot $U$ has bracket 1. By rule 3 $\langle U \sqcup U \rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})$. Meaning if we sum our components we get $$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$&lt;/p&gt;
+&lt;p&gt;By rule (1) a single unknot &lt;span class="math"&gt;\(U\)&lt;/span&gt; has bracket 1. By rule 3 &lt;span class="math"&gt;\(\langle U \sqcup U \rangle = (-A^2 - A^{-2})\langle U \rangle = (-A^2 - A^{-2})\)&lt;/span&gt;. Meaning if we sum our components we get &lt;/p&gt;
+&lt;div class="math"&gt;$$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) = -A^4 - A^{-4}$$&lt;/div&gt;
 &lt;p&gt;Something else you could do is start with a sum of all possible smoothings.
-Suppose the unknot's polynomial is $-A^2 - A^{-2}$ then instead of a recursive
+Suppose the unknot's polynomial is &lt;span class="math"&gt;\(-A^2 - A^{-2}\)&lt;/span&gt; then instead of a recursive
 tree you could have a list of all possible smoothings (where we smooth all
 crossings at the same time)  &lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="https://uberyb.github.io/images/knots/3.png"&gt;&lt;/p&gt;
-&lt;p&gt;Notice the sum here is $(A^2 + A^{-2})(A^4 + A^{-4})$ which has an additional
+&lt;p&gt;Notice the sum here is &lt;span class="math"&gt;\((A^2 + A^{-2})(A^4 + A^{-4})\)&lt;/span&gt; which has an additional
 factor on our answer from the recursive approach. Remembering that we "scaled"
-the unknots polynomial, we can renormalize by dividing out $(-A^2 - A^{-2})$&lt;/p&gt;
-&lt;p&gt;Now if $A^4 = t$ this is Jones polynomial of the Hopf link (in fact
-orienting the link and multiplying the bracket by a factor $A^{-3wr(L)}$ will
+the unknots polynomial, we can renormalize by dividing out &lt;span class="math"&gt;\((-A^2 - A^{-2})\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now if &lt;span class="math"&gt;\(A^4 = t\)&lt;/span&gt; this is Jones polynomial of the Hopf link (in fact
+orienting the link and multiplying the bracket by a factor &lt;span class="math"&gt;\(A^{-3wr(L)}\)&lt;/span&gt; will
 get you to the Jones polynomial).&lt;/p&gt;
-&lt;p&gt;A question that I spent some time thinking about is how to motivate $-A^2 - A^{-2}$ as the choice for the unknot's bracket. This expression is obviously not very random. For one, it has the nice property that $\langle \bigsqcup U_n \rangle = (-A^2 - A^{-2})^n$ where $U_n$ is a length $n$ sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently &lt;a href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/"&gt;wrote about&lt;/a&gt;. Namely, it is the constant $\delta$.&lt;/p&gt;</content><category term="expository"></category></entry><entry><title>Sample</title><link href="https://uberyb.github.io/sample.html" rel="alternate"></link><published>2022-09-21T19:19:25-07:00</published><updated>2022-09-21T19:19:25-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-09-21:/sample.html</id><content type="html">&lt;p&gt;test&lt;/p&gt;
-&lt;p&gt;$$\oint_{\gamma}f(z) dz = 0$$&lt;/p&gt;</content><category term="expository"></category></entry></feed>
+&lt;p&gt;A question that I spent some time thinking about is how to motivate &lt;span class="math"&gt;\(-A^2 - A^{-2}\)&lt;/span&gt; as the choice for the unknot's bracket. This expression is obviously not very random. For one, it has the nice property that &lt;span class="math"&gt;\(\langle \bigsqcup U_n \rangle = (-A^2 - A^{-2})^n\)&lt;/span&gt; where &lt;span class="math"&gt;\(U_n\)&lt;/span&gt; is a length &lt;span class="math"&gt;\(n\)&lt;/span&gt; sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently &lt;a href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/"&gt;wrote about&lt;/a&gt;. Namely, it is the constant &lt;span class="math"&gt;\(\delta\)&lt;/span&gt;.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="expository"></category></entry><entry><title>Sample</title><link href="https://uberyb.github.io/sample.html" rel="alternate"></link><published>2022-09-21T19:19:25-07:00</published><updated>2022-09-21T19:19:25-07:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2022-09-21:/sample.html</id><summary type="html">&lt;p&gt;test&lt;/p&gt;
+&lt;div class="math"&gt;$$\oint_{\gamma}f(z) dz = 0$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript' …&lt;/script&gt;</summary><content type="html">&lt;p&gt;test&lt;/p&gt;
+&lt;div class="math"&gt;$$\oint_{\gamma}f(z) dz = 0$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="expository"></category></entry></feed>
