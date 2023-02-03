@@ -67,7 +67,7 @@ $*$-algebra with generators $e_1, e_2,...,e_n$ and relations  &lt;/p&gt;
 &lt;li&gt;$e_{i}^2 = e_i, e_i^*$  &lt;/li&gt;
 &lt;li&gt;$e_i e_j = e_j e_i$ for $|i-j| \ge 2$  &lt;/li&gt;
 &lt;li&gt;$e_ie_{i\pm 1}e_i = \tau e_i  &lt;/li&gt;
-&lt;/ul&gt;</content><category term="expository"></category></entry><entry><title>[protected] Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:43:08-08:00</published><updated>2023-02-01T18:43:08-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><summary type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;JOKmgsex4oaGbtb0cwHpiA==;OSLH3Xt6UjZhyQDmAJwFNQWEodoFiLojB/k7o8FtT6A=;^&lt;/div&gt;
+&lt;/ul&gt;</content><category term="expository"></category></entry><entry><title>[protected] Some encrypted page</title><link href="https://uberyb.github.io/some-encrypted-page.html" rel="alternate"></link><published>2023-02-01T18:43:08-08:00</published><updated>2023-02-01T18:43:08-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-01:/some-encrypted-page.html</id><summary type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;6bcExlRbIiUVT0BlXrX1Xw==;L265/kuocxoSTKF4Ab+L6dz4VZYhBf9n1JirErhHluw=;^&lt;/div&gt;
 &lt;div id="pec-decrypted-content"&gt;
     &lt;h4&gt;&lt;i&gt;This content is encrypted. Please don't share it.&lt;/i&gt;&lt;/h4&gt;
 &lt;/div&gt;
@@ -105,7 +105,7 @@ $*$-algebra with generators $e_1, e_2,...,e_n$ and relations  &lt;/p&gt;
             }
         };
 
-        var decrypt_content = function (password, iv_b64, ciphertext_b64 …&lt;/script&gt;</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;JOKmgsex4oaGbtb0cwHpiA==;OSLH3Xt6UjZhyQDmAJwFNQWEodoFiLojB/k7o8FtT6A=;^&lt;/div&gt;
+        var decrypt_content = function (password, iv_b64 …&lt;/script&gt;</summary><content type="html">&lt;div id="pec-encrypted-content" style="display:none"&gt;6bcExlRbIiUVT0BlXrX1Xw==;L265/kuocxoSTKF4Ab+L6dz4VZYhBf9n1JirErhHluw=;^&lt;/div&gt;
 &lt;div id="pec-decrypted-content"&gt;
     &lt;h4&gt;&lt;i&gt;This content is encrypted. Please don't share it.&lt;/i&gt;&lt;/h4&gt;
 &lt;/div&gt;
