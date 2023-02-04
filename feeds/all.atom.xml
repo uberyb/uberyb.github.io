@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-03T12:54:18-08:00</updated><entry><title>Lecture Series (TQC group) - Braid relations, matrix representations, and the Temperley Lieb algebra</title><link href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html" rel="alternate"></link><published>2023-02-03T12:54:18-08:00</published><updated>2023-02-03T12:54:18-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-03:/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-04T11:09:51-08:00</updated><entry><title>Lecture Series (TQC group) - Braid relations, matrix representations, and the Temperley Lieb algebra</title><link href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html" rel="alternate"></link><published>2023-02-04T11:09:51-08:00</published><updated>2023-02-04T11:09:51-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-04:/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is ultimately part of a lecture series given in the topological quantum
 computing reading group. The notes in the past were either beamer slides or some
 handwritten notes, but I decided to give this format a try since it makes
@@ -79,6 +79,35 @@ relationship with the braid group.  &lt;/p&gt;
 &lt;li&gt;&lt;span class="math"&gt;\(e_i e_j = e_j e_i\)&lt;/span&gt; for &lt;span class="math"&gt;\(|i-j| \ge 2\)&lt;/span&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;span class="math"&gt;\(e_ie_{i\pm 1}e_i = \tau e_i\)&lt;/span&gt;  &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;As an exercise, we can attempt to divine the structure of &lt;span class="math"&gt;\(TL_{n}\)&lt;/span&gt;. It will be
+useful to know the following two facts:  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cartan's criteria for semisimplicity&lt;/strong&gt;. A finite dimensional Lie algebra
+     over a characteristic 0 field is semisimple if and only if the Killing form
+     is non-degenerate.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Wedderburn-Artin theorem&lt;/strong&gt;. A finite dimensional semisimple algebra over
+     &lt;span class="math"&gt;\(\mathbb{C}\)&lt;/span&gt; is isomorphic to a direct sum of matrix algebras (possibly of
+     varying sizes) over &lt;span class="math"&gt;\(\mathbb{C}\)&lt;/span&gt;.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The Killing form is an inner product on the Lie algebra. It is
+defined as &lt;/p&gt;
+&lt;div class="math"&gt;$$B(X,Y) = \text{tr}(\text{ad}(X)\text{ad}(Y))$$&lt;/div&gt;
+&lt;p&gt;
+&lt;span class="math"&gt;\(\text{ad}(X)\)&lt;/span&gt; is the adjoint endomorphism on the Lie algebra, defined like
+&lt;span class="math"&gt;\(\text{ad}(X)(Y) = [X,Y]\)&lt;/span&gt; (&lt;span class="math"&gt;\([\cdot]\)&lt;/span&gt; is the Lie bracket). We can assume that
+because &lt;span class="math"&gt;\(TL_n\)&lt;/span&gt; depends on a parameter, it's semisimple for all but a finite
+number of &lt;span class="math"&gt;\(\tau\)&lt;/span&gt; provided we can find a single &lt;span class="math"&gt;\(\tau\)&lt;/span&gt; for which &lt;span class="math"&gt;\(TL_n\)&lt;/span&gt; is
+semisimple. Importantly, we can show that &lt;span class="math"&gt;\(\tau = \frac{1}{4}\)&lt;/span&gt; makes &lt;span class="math"&gt;\(TL_n\)&lt;/span&gt;
+semisimple. We now understand enough about the structure of these algebras to
+work out a few examples.&lt;/p&gt;
+&lt;!--- 
+https://gdz.sub.uni-goettingen.de/id/PPN266833020_0219?tify=%7B%22pages%22%3A%5B545%5D%2C%22pan%22%3A%7B%22x%22%3A0.467%2C%22y%22%3A0.991%7D%2C%22view%22%3A%22info%22%2C%22zoom%22%3A0.529%7D
+--&gt;
+
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
