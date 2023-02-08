@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-08T00:44:05-08:00</updated><entry><title>home</title><link href="https://uberyb.github.io/home.html" rel="alternate"></link><published>2023-02-08T00:44:05-08:00</published><updated>2023-02-08T00:44:05-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-08:/home.html</id><summary type="html">&lt;h2&gt;About me&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;I'm a PhD student studying computer science at UC Davis interested in theoretical computer science and quantum computing. I  like to focus on quantum complexity theory, quantum algorithms, and fault tolerance. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, which I …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;About me&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;I'm a PhD student studying computer science at UC Davis interested in theoretical computer science and quantum computing. I  like to focus on quantum complexity theory, quantum algorithms, and fault tolerance. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, which I usually advertise on the side links of my homepage. Worked out problems, expository writings, and my lecture notes from various seminars may occasionally make their way here. Feel free to use them or email me corrections/comments.  &lt;/p&gt;
-&lt;p&gt;Previously I was a Master's student of computer science at Davis, and before that I did my undergraduate in pure mathematics at Towson University under the advisement of &lt;a href="https://www.towson.edu/fcsm/departments/mathematics/facultystaff/akumchev.html"&gt;Angel Kumchev&lt;/a&gt;.  &lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;Reading Groups&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html"&gt;Quantum
-Complexity &amp;amp; PCP Conjecture&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://uberyb.github.io/exercises.html"&gt;Exercises/Problems&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2023-02-08T00:43:59-08:00</published><updated>2023-02-08T00:43:59-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-08:/topological-quantum-field-theory.html</id><summary type="html">&lt;p&gt;The best source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/all.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-08T00:48:14-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2023-02-08T00:48:14-08:00</published><updated>2023-02-08T00:48:14-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-08:/topological-quantum-field-theory.html</id><summary type="html">&lt;p&gt;The best source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;our new site&lt;/a&gt;.  &lt;/p&gt;
 &lt;h2&gt;My notes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html"&gt;Notes on knot theory &amp;amp; Jones polynomial&lt;/a&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html"&gt;Kauffman bracket of the Hopf link&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;What is a TQFTs&lt;/h2&gt;
+&lt;h2&gt;What is a TQFT&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Something I was happy to learn in this meeting was the definition of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The best source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;Something I was happy to learn in this meeting was the definition of a TQFT.
+First we …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The best source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;our new site&lt;/a&gt;.  &lt;/p&gt;
 &lt;h2&gt;My notes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html"&gt;Notes on knot theory &amp;amp; Jones polynomial&lt;/a&gt;  &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html"&gt;Kauffman bracket of the Hopf link&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;What is a TQFTs&lt;/h2&gt;
+&lt;h2&gt;What is a TQFT&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
@@ -119,7 +104,23 @@ this one.&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="readings"></category></entry><entry><title>Lecture Series (TQC group) - Braid relations, matrix representations, and the Temperley Lieb algebra</title><link href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html" rel="alternate"></link><published>2023-02-06T13:02:20-08:00</published><updated>2023-02-06T13:02:20-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-06:/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;/script&gt;</content><category term="readings"></category></entry><entry><title>home</title><link href="https://uberyb.github.io/home.html" rel="alternate"></link><published>2023-02-08T00:44:05-08:00</published><updated>2023-02-08T00:44:05-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-08:/home.html</id><summary type="html">&lt;h2&gt;About me&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;I'm a PhD student studying computer science at UC Davis interested in theoretical computer science and quantum computing. I  like to focus on quantum complexity theory, quantum algorithms, and fault tolerance. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, which I …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;About me&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Me" src="https://uberyb.github.io/images/me.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;I'm a PhD student studying computer science at UC Davis interested in theoretical computer science and quantum computing. I  like to focus on quantum complexity theory, quantum algorithms, and fault tolerance. I'm advised by &lt;a href="https://www.math.ucdavis.edu/~greg/"&gt;Greg Kuperberg&lt;/a&gt;. I participate in a few quantum computing groups at Davis, which I usually advertise on the side links of my homepage. Worked out problems, expository writings, and my lecture notes from various seminars may occasionally make their way here. Feel free to use them or email me corrections/comments.  &lt;/p&gt;
+&lt;p&gt;Previously I was a Master's student of computer science at Davis, and before that I did my undergraduate in pure mathematics at Towson University under the advisement of &lt;a href="https://www.towson.edu/fcsm/departments/mathematics/facultystaff/akumchev.html"&gt;Angel Kumchev&lt;/a&gt;.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Reading Groups&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/quantum-complexity-reading-group-started-102022.html"&gt;Quantum
+Complexity &amp;amp; PCP Conjecture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/topological-quantum-field-theory.html"&gt;Topological QFTs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/exercises.html"&gt;Exercises/Problems&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>Lecture Series (TQC group) - Braid relations, matrix representations, and the Temperley Lieb algebra</title><link href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html" rel="alternate"></link><published>2023-02-06T13:02:20-08:00</published><updated>2023-02-06T13:02:20-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-06:/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html</id><summary type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is ultimately part of a lecture series given in the topological quantum
 computing reading group. The notes in the past were either beamer slides or some
 handwritten notes, but I decided to give this format a try since it makes
