@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - readings</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/readings.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-01-13T08:08:53-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2023-01-13T08:08:53-08:00</published><updated>2023-01-13T08:08:53-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-01-13:/topological-quantum-field-theory.html</id><summary type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
-&lt;h2&gt;Meeting Notes&lt;/h2&gt;
-&lt;p&gt;11/07/2022  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Daniel Tobias - readings</title><link href="https://uberyb.github.io/" rel="alternate"></link><link href="https://uberyb.github.io/feeds/readings.atom.xml" rel="self"></link><id>https://uberyb.github.io/</id><updated>2023-02-08T00:43:59-08:00</updated><entry><title>Topological Quantum Field Theory</title><link href="https://uberyb.github.io/topological-quantum-field-theory.html" rel="alternate"></link><published>2023-02-08T00:43:59-08:00</published><updated>2023-02-08T00:43:59-08:00</updated><author><name>Daniel Tobias</name></author><id>tag:uberyb.github.io,2023-02-08:/topological-quantum-field-theory.html</id><summary type="html">&lt;p&gt;The best source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
+&lt;h2&gt;My notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html"&gt;Notes on knot theory &amp;amp; Jones polynomial&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html"&gt;Kauffman bracket of the Hopf link&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What is a TQFTs&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Something I was happy to learn in this meeting was the definition of a TQFT.
-First we define a &lt;em&gt;cobordism&lt;/em&gt; between manifolds &lt;span class="math"&gt;\(\Sigma_0\)&lt;/span&gt; and …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In general, a good source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
-&lt;h2&gt;Meeting Notes&lt;/h2&gt;
-&lt;p&gt;11/07/2022  &lt;/p&gt;
+&lt;p&gt;Something I was happy to learn in this meeting was the definition of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The best source to stay up to date is &lt;a href="https://sites.google.com/ucdavis.edu/quantumalgebragroup/"&gt;https://sites.google.com/ucdavis.edu/quantumalgebragroup/&lt;/a&gt;  &lt;/p&gt;
+&lt;h2&gt;My notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/lecture-series-tqc-group-braid-relations-matrix-representations-and-the-temperley-lieb-algebra.html"&gt;Notes on knot theory &amp;amp; Jones polynomial&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://uberyb.github.io/kauffman-jones-polynomial-of-hopf-link.html"&gt;Kauffman bracket of the Hopf link&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What is a TQFTs&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://uberyb.github.io/images/tqfttotqc.pdf"&gt;TQFTs to TQCs&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
