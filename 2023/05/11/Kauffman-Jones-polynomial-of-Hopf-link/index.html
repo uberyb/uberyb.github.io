@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="This exercise came out of a series of lectures given for the Topological QFTs reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further un">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kauffman &amp; Jones polynomial of Hopf link">
+<meta property="og:url" content="https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="This exercise came out of a series of lectures given for the Topological QFTs reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further un">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Borromean_Rings_Illusion_%28transparent%29.png/1024px-Borromean_Rings_Illusion_%28transparent%29.png">
+<meta property="og:image" content="https://tobias.cs.ucdavis.edu/images/knots/1.png">
+<meta property="og:image" content="https://tobias.cs.ucdavis.edu/images/knots/2.png">
+<meta property="og:image" content="https://tobias.cs.ucdavis.edu/images/knots/3.png">
+<meta property="article:published_time" content="2023-05-11T08:13:43.000Z">
+<meta property="article:modified_time" content="2023-05-11T08:39:04.844Z">
+<meta property="article:author" content="Daniel Tobias">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Borromean_Rings_Illusion_%28transparent%29.png/1024px-Borromean_Rings_Illusion_%28transparent%29.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+      
+    
+    <!-- title -->
+    <title>Kauffman &amp; Jones polynomial of Hopf link</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/groups/">Groups</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Posts</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2023/05/11/New-page/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&text=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&is_video=false&description=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Kauffman &amp; Jones polynomial of Hopf link&body=Check out this article: https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&name=Kauffman &amp; Jones polynomial of Hopf link&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&t=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Kauffman &amp; Jones polynomial of Hopf link
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Daniel Tobias</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-05-11T08:13:43.000Z" class="dt-published" itemprop="datePublished">2023-05-11</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/math-knot-theory/">math,knot theory</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>This exercise came out of a series of lectures given for the <a href="%7Bfilename%7D/readings/tqft1.md">Topological QFTs</a> reading group. Really the lectures began as a way to catch up on elementary knot theory so that the group could further understand the work of <a target="_blank" rel="noopener" href="https://math.berkeley.edu/~vfr/">Vaughan Jones</a>. This post is not meant to be tremendously theoretical, but meant to serve as a gentle reminder about how one does these sorts of computations.  </p>
+<p><u>Define.</u> A knot is a closed curve seen as a subset $K \subset S^3$ which<br>should be interpreted as $\mathbb{R}$ plus a point at infinity.  </p>
+<p>There are reasons for why the point at infinity is useful (although it is not<br>relevant to the current task) and I believe containing the knot in $S^3$ is done<br>so that we can fit the whole knot in a compact space. There are some operations<br>on knots, but all we need here is to understand that knots can be <em>linked</em>. A<br>link $L$ is a collection of non-intersecting knots that are “linked” together. A<br>good example of this is the Borromean link  </p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Borromean_Rings_Illusion_%28transparent%29.png/1024px-Borromean_Rings_Illusion_%28transparent%29.png" alt="Borromean Rings" width="200" />
+
+<p>Each ring here (which is really just a circle) is called an “unknot”. Observe<br>that the removal of any unknot from the picture would totally undo the link.<br><img src="/images/knots/1.png" alt="Hopf link"><br><em>Hopf link</em></p>
+<p>A subtle detail of my drawing of the Hopf link: at the crossing there is<br>one completely solid line intersection a “broken” line. The broken line is to be<br>interpreted as the string which passes under the other string in the crossing.  </p>
+<p>One goal of knot theory is to classify knots. One way we can do this is to<br>capture a knot with algebraic information. In the case of the Jones polynomial<br>one must use a Laurent polynomial. First I’ll start with a more general<br>polynomial for knots known as the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Bracket_polynomial">Kauffman bracket</a> which is most easily defined inductively. For any link $L$ the Kauffman bracket $\langle L \rangle$ is</p>
+<ol>
+<li>$\langle L \rangle &#x3D; 1$ if $L$ is the unknot.  </li>
+<li>$\langle \times \rangle &#x3D; A \langle || \rangle + A^{-1} \langle &#x3D; \rangle$  </li>
+<li>$\langle U \sqcup L &#x3D; (-A^2 - A^{-2})\langle L \rangle$ (where $U$ is the<br>  unknot and $L$ is some link)</li>
+</ol>
+<p>Rule 2 will require further explanation. The symbols $\times$, $||$, and $&#x3D;$ are<br>meant to be seen as physical string. $\times$ implies there is a crossing, $||$<br>implies the strings are vertical and parallel whereas $&#x3D;$ implies the strings<br>are horizontal and parallel. The idea is to “smooth” or reduce knot crossings<br>into the sum of these two components. </p>
+<p>So we can decompose the Hopf link using a recursive approach in a sort of tree<br>structure such as:  </p>
+<p><img src="/images/knots/2.png" alt="Kauffman bracket of the Hopf link">  </p>
+<p>The diagram starts with the Hopf link and then we apply a single smoothing to a single crossing. I label the edges of my graph by the coefficient attached to the smoothing given by rule 2. The bottom middle two nodes of the tree are just unknots, and so their Kauffman brackets<br>are constant 1. Now the bottom left and bottom right nodes are regular isotopies of another (meaning one can be transformed to the other by <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Reidemeister_move">Reidemeister move’s</a> of type II and III). All that remains is to compute the Kauffman bracket of the double unkot.  </p>
+<p>By rule (1) a single unknot $U$ has bracket 1. By rule 3 $\langle U \sqcup U \rangle &#x3D; (-A^2 - A^{-2})\langle U \rangle &#x3D; (-A^2 - A^{-2})$. Meaning if we sum our components we get $$A^2(-A^2-A^{-2})+1+1+A^{-2}(-A^2 -A^{-2}) &#x3D; -A^4 - A^{-4}$$</p>
+<p>Something else you could do is start with a sum of all possible smoothings.<br>Suppose the unknot’s polynomial is $-A^2 - A^{-2}$ then instead of a recursive<br>tree you could have a list of all possible smoothings (where we smooth all<br>crossings at the same time)  </p>
+<p><img src="/images/knots/3.png"></p>
+<p>Notice the sum here is $(A^2 + A^{-2})(A^4 + A^{-4})$ which has an additional<br>factor on our answer from the recursive approach. Remembering that we “scaled”<br>the unknots polynomial, we can renormalize by dividing out $(-A^2 - A^{-2})$</p>
+<p>Now if $A^4 &#x3D; t$ this is Jones polynomial of the Hopf link (in fact<br>orienting the link and multiplying the bracket by a factor $A^{-3wr(L)}$ will<br>get you to the Jones polynomial).</p>
+<p>A question that I spent some time thinking about is how to motivate $-A^2 - A^{-2}$ as the choice for the unknot’s bracket. This expression is obviously not very random. For one, it has the nice property that $\langle \bigsqcup U_n \rangle &#x3D; (-A^2 - A^{-2})^n$ where $U_n$ is a length $n$ sequence of unknots. It also happens to show up in the invariance of the Kauffman bracket under the Reidemeister type II move which Sanchayan Dutta recently <a target="_blank" rel="noopener" href="https://sanchayandutta.wordpress.com/2023/01/09/the-strange-third-rule-of-kauffmans-bracket/">wrote about</a>. Namely, it is the constant $\delta$.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/groups/">Groups</a></li>
+        
+          <li><a href="/archives/">Posts</a></li>
+        
+          <li><a href="/projects/">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&text=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&is_video=false&description=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Kauffman &amp; Jones polynomial of Hopf link&body=Check out this article: https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&title=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&name=Kauffman &amp; Jones polynomial of Hopf link&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://tobias.cs.ucdavis.edu/2023/05/11/Kauffman-Jones-polynomial-of-Hopf-link/&t=Kauffman &amp; Jones polynomial of Hopf link"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2023
+    Daniel Tobias
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/groups/">Groups</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Posts</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
